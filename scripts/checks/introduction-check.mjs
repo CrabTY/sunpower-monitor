@@ -7,9 +7,14 @@ import vm from 'node:vm';
 const names = ['index.html', 'getting-started.html', 'compare.html', 'project.html'];
 const pages = Object.fromEntries(names.map(name => [name, readFileSync(new URL('../../site/' + name, import.meta.url), 'utf8')]));
 const guide = readFileSync(new URL('../../docs/ct-calibration.md', import.meta.url), 'utf8');
-const assets = new Set(['introduction.css', 'introduction.js']);
+const assets = new Set(['introduction.css', 'introduction.js', 'assets/brand-mark.svg']);
+const assetSource = asset => new URL(asset === 'assets/brand-mark.svg' ? '../../web/brand-mark.svg' : '../../site/' + asset, import.meta.url);
+const brandSvg = readFileSync(assetSource('assets/brand-mark.svg'), 'utf8');
+assert.doesNotMatch(brandSvg, /<text\b/, 'The favicon must not depend on system fonts');
+assert.match(brandSvg, /stroke="#ff9b3d"/, 'The favicon uses the fixed color verified on light/dark tabs');
 for (const [name, page] of Object.entries(pages)) {
   assert.doesNotMatch(page, /chatgpt\.com\/c\//);
+  assert.match(page, /<link rel="icon" type="image\/svg\+xml" href="assets\/brand-mark\.svg" sizes="any">/);
   assert.equal((page.match(/<h1\b/g) || []).length, 1, name + ' has one primary heading');
   assert.match(page, /aria-current="page"/);
   assert.match(page, /<html lang="en"/, name + ' defaults to English before scripts run');
@@ -32,7 +37,7 @@ assert.doesNotMatch(guide, /chatgpt\.com\/c\//);
 for (const [, asset] of guide.matchAll(/src="([^"]+)"/g)) {
   assert.ok(readFileSync(new URL('../../docs/' + asset, import.meta.url)).length, 'Guide image: ' + asset);
 }
-for (const asset of assets) assert.ok(readFileSync(new URL('../../site/' + asset, import.meta.url)).length, asset);
+for (const asset of assets) assert.ok(readFileSync(assetSource(asset)).length, asset);
 const comparison = pages['compare.html'].match(/class="reference-table solution-table"[\s\S]*?<table>([\s\S]*?)<\/table>/)[1];
 const rows = Array.from(comparison.matchAll(/<tr>([\s\S]*?)<\/tr>/g), ([, row]) => row);
 assert.equal(rows.length, 10);
@@ -145,10 +150,14 @@ try {
   for (const asset of assets) {
     const response = await fetch(origin + '/introduction/' + asset);
     assert.equal(response.status, 200, asset);
-    assert.deepEqual(Buffer.from(await response.arrayBuffer()), readFileSync(new URL('../../site/' + asset, import.meta.url)), asset);
+    assert.deepEqual(Buffer.from(await response.arrayBuffer()), readFileSync(assetSource(asset)), asset);
+    if (asset.endsWith('.svg')) assert.equal(response.headers.get('content-type'), 'image/svg+xml; charset=utf-8');
     if (asset.endsWith('.jpg')) assert.equal(response.headers.get('content-type'), 'image/jpeg');
   }
   for (const path of ['/introduction/local-deployment.md', '/introduction/ct-calibration.md', '/introduction/assets/ct-dual-200a.png', '/introduction/__preview.js', '/introduction/assets/../../local-deployment.md']) assert.equal((await fetch(origin + path)).status, 404, path);
   assert.match(await (await fetch(origin + '/')).text(), /<script src="\/__preview.js"><\/script>/);
+  const brand = await fetch(origin + '/brand-mark.svg');
+  assert.equal(brand.headers.get('content-type'), 'image/svg+xml; charset=utf-8');
+  assert.equal(await brand.text(), readFileSync(assetSource('assets/brand-mark.svg'), 'utf8'));
   console.log('introduction page and route checks passed');
 } finally { server.kill(); await once(server, 'exit'); }

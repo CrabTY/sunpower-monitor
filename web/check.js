@@ -36,6 +36,9 @@ const FORBIDDEN = ["localstorage", "demo", "bearer ", "api_key", "token", "simul
 
 for (const page of pages) {
   const html = readFileSync(join(here, page.html), "utf8");
+  if (!html.includes('<link rel="icon" type="image/svg+xml" href="/brand-mark.svg" sizes="any" />')) {
+    failures.push(`${page.html} must use the shared SVG favicon`);
+  }
   const script = readFileSync(join(here, page.script), "utf8");
   execFileSync(process.execPath, ["--check", join(here, page.script)], { stdio: "pipe" });
 

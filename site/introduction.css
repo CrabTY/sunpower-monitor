@@ -20,7 +20,7 @@ p,dd { text-wrap:pretty; }
 #main:focus { outline:none; }
 .site-header { position:sticky; top:0; z-index:10; min-height:76px; padding-block:10px; display:flex; align-items:center; gap:28px; background:var(--paper); border-bottom:1px solid var(--line); }
 .brand { display:flex; align-items:center; flex-shrink:0; gap:9px; font-size:22px; font-weight:650; letter-spacing:-1px; line-height:1.1; }
-.brand-sun { font-size:36px; color:var(--orange); font-weight:400; }
+.brand-sun { width:36px; height:36px; flex-shrink:0; background:var(--orange); mask:url("assets/brand-mark.svg") center / contain no-repeat; }
 .brand-sub { display:block; font-size:11px; font-weight:500; letter-spacing:3.5px; margin-top:4px; }
 .nav-strip { flex:1; min-width:0; position:relative; }
 .site-header nav { display:flex; gap:8px; overflow-x:auto; overscroll-behavior-x:contain; scrollbar-width:none; }
@@ -167,7 +167,8 @@ h2 { font-size:32px; font-weight:550; line-height:1.35; letter-spacing:-.035em; 
 .comparison-notes p { margin-top:12px; }
 .mobile-comparison,.mobile-comparison-hint { display:none; }
 .site-footer { display:flex; justify-content:space-between; align-items:center; gap:24px; padding-block:24px; font-size:12px; color:var(--muted); }
-.footer-brand { color:var(--ink); font-size:14px; font-weight:650; }
+.footer-brand { display:inline-flex; align-items:center; gap:6px; color:var(--ink); font-size:14px; font-weight:650; }
+.footer-brand .brand-sun { width:16px; height:16px; }
 .image-open { overflow:hidden; }
 .image-viewer { width:min(1280px,calc(100% - 48px)); max-height:calc(100dvh - 48px); padding:16px; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:8px; overscroll-behavior:contain; }
 .image-viewer::backdrop { background:#152b24dd; }
@@ -202,7 +203,7 @@ h2 { font-size:32px; font-weight:550; line-height:1.35; letter-spacing:-.035em; 
   .wrap { width:calc(100% - 36px); }
   .section { padding-block:32px; }
   .brand { font-size:20px; gap:7px; }
-  .brand-sun { font-size:30px; }
+  .brand-sun { width:30px; height:30px; }
   .brand-sub { font-size:10px; letter-spacing:3px; }
   .header-actions { gap:6px; }
   .repo-link { padding:8px; font-size:12px; gap:4px; }
@@ -262,7 +263,7 @@ h2 { font-size:32px; font-weight:550; line-height:1.35; letter-spacing:-.035em; 
 @media (max-width:360px) {
   .brand { font-size:17px; }
   .brand-sub { letter-spacing:2px; }
-  .brand-sun { font-size:25px; }
+  .brand-sun { width:25px; height:25px; }
   .repo-link { border:0; padding:8px 0; }
   .header-actions { gap:0; }
   .site-header nav a { padding:6px; }

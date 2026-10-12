@@ -18,6 +18,7 @@ for (const name of await readdir(join(root, "site/assets"))) {
   }
 }
 await mkdir(demo);
+await cp(join(root, "web/brand-mark.svg"), join(output, "assets/brand-mark.svg"));
 
 const policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'";
 const banner = `<aside class="preview-banner" aria-label="Simulated demo">Simulated data · read-only demo · no device or account connected
@@ -26,8 +27,9 @@ const banner = `<aside class="preview-banner" aria-label="Simulated demo">Simula
 const css = `.preview-banner{position:sticky;top:0;z-index:10;padding:8px 16px;background:#111e2b;color:#ecf4f7;font:14px system-ui;line-height:1.8}.preview-banner a{color:white;display:inline-block;margin-left:12px}`;
 
 for (const name of await readdir(join(root, "web"))) {
-  if (!/\.(html|js|css)$/.test(name) || ["check.js", "chart-engine.js"].includes(name)) continue;
+  if (!/\.(html|js|css|svg)$/.test(name) || ["check.js", "chart-engine.js"].includes(name)) continue;
   let body = await readFile(join(root, "web", name), "utf8");
+  if (name.endsWith(".css")) body = body.replaceAll('url("/brand-mark.svg")', 'url("./brand-mark.svg")');
   if (name.endsWith(".html")) {
     body = body.replace(/(href|src)="\/(?!\/)/g, '$1="./')
       .replace("</head>", `<meta http-equiv="Content-Security-Policy" content="${policy}"><link rel="stylesheet" href="demo.css"><script src="demo.js"></script></head>`)

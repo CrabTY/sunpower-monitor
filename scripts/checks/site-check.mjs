@@ -34,6 +34,17 @@ for (const path of (await files(root)).filter(path => path.endsWith(".html"))) {
     assert.match(html, /Simulated data/);
   }
 }
+for (const path of (await files(root)).filter(path => path.endsWith(".css"))) {
+  const css = await readFile(path, "utf8");
+  for (const prefix of ["/", "/sunpower-monitor/"]) {
+    const page = new URL(prefix + path.slice(root.length), "https://example.test");
+    for (const [, link] of css.matchAll(/url\("([^"]+)"\)/g)) {
+      const url = new URL(link, page);
+      assert.ok(url.pathname.startsWith(prefix), "CSS asset escaped project path: " + link);
+      await stat(join(root, decodeURIComponent(url.pathname.slice(prefix.length))));
+    }
+  }
+}
 const source = await readFile(join(root, "demo/demo.js"), "utf8");
 for (const prefix of ["/", "/sunpower-monitor/"]) {
   let nativeRequests = 0, positionRequests = 0;

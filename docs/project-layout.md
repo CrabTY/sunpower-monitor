@@ -54,6 +54,14 @@ The demo loads the same `web/` source with synthetic API responses. There is no
 second dashboard implementation to maintain. GitHub Pages publishes only the
 static build; the authenticated household dashboard runs on Cloudflare.
 
+The shared brand icon, including its outer ring, is `web/brand-mark.svg`. The
+public build also copies it to `assets/brand-mark.svg`; local introduction previews
+serve that same source. All introduction and dashboard pages use it as the
+browser tab favicon, with a fixed orange color verified on light and dark Chrome
+tab bars. It does not require a theme-triggered favicon reload.
+CSS masks keep its shape independent of system fonts and its color tied to each
+page's brand variable, including the dashboard's light/dark themes.
+
 ## Local configuration and persistent data
 
 `.env`, rendered `workers/*/wrangler.toml`, `.dev.vars*`, `private/`, dependencies,

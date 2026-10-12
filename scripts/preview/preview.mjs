@@ -8,7 +8,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const web = resolve(here, "../../web");
 const site = resolve(here, "../../site");
 const port = Number(process.env.PORT || 4173);
-const mime = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".png": "image/png", ".jpg": "image/jpeg" };
+const mime = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".png": "image/png", ".jpg": "image/jpeg", ".svg": "image/svg+xml" };
 const banner = `<style>
 .preview-banner{position:sticky;top:0;z-index:10;padding:8px 16px;background:#111e2b;color:#ecf4f7;font:14px system-ui}
 .preview-banner a{color:white;margin-left:16px}
@@ -34,9 +34,10 @@ const server = createServer(async (request, response) => {
     : url.pathname === "/" ? "index.html"
     : /^\/(history|panels|settings)$/.test(url.pathname) ? url.pathname.slice(1) + ".html"
       : url.pathname.slice(1);
-  const file = !introduction && name === "__preview.js" ? resolve(here, "preview-client.js") : resolve(root, name);
-  if ((introduction && !/^((index|getting-started|compare|project)\.html|introduction\.(css|js)|assets\/(live|history|panels|mobile|ct-partial-coverage|ct-busbar-connection|ct-dual-branch)\.(png|jpg))$/.test(name)) ||
-      (name !== "__preview.js" && !file.startsWith(root + sep))) {
+  const brandAsset = introduction && name === "assets/brand-mark.svg";
+  const file = brandAsset ? resolve(web, "brand-mark.svg") : !introduction && name === "__preview.js" ? resolve(here, "preview-client.js") : resolve(root, name);
+  if ((introduction && !brandAsset && !/^((index|getting-started|compare|project)\.html|introduction\.(css|js)|assets\/(live|history|panels|mobile|ct-partial-coverage|ct-busbar-connection|ct-dual-branch)\.(png|jpg))$/.test(name)) ||
+      (!brandAsset && name !== "__preview.js" && !file.startsWith(root + sep))) {
     response.writeHead(404).end();
     return;
   }
