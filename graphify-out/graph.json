@@ -134,17 +134,17 @@
       "source_location": "L21"
     },
     {
-      "id": "tests_test_pvs_parsingtests",
-      "label": "ParsingTests",
+      "id": "collector_rollup_siteminute",
+      "label": "SiteMinute",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": "parsingtests",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L503"
+      "norm_label": "siteminute",
+      "source_file": "collector/rollup.py",
+      "source_location": "L34"
     },
     {
       "id": "workers_dashboard_src_notifications_issue",
@@ -277,30 +277,43 @@
       "source_location": "L151"
     },
     {
-      "id": "collector_pvs_pvsautherror",
-      "label": "PVSAuthError",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "PVSClient",
-      "file_type": "code",
-      "norm_label": "pvsautherror",
-      "source_file": "collector/pvs.py",
-      "source_location": "L40"
-    },
-    {
       "id": "collector_pvs_pvsclient",
       "label": "PVSClient",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": "pvsclient",
       "source_file": "collector/pvs.py",
       "source_location": "L48"
+    },
+    {
+      "id": "collector_pvs_pvserror",
+      "label": "PVSError",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "pvserror",
+      "source_file": "collector/pvs.py",
+      "source_location": "L29"
+    },
+    {
+      "id": "tests_test_collector_startuptests",
+      "label": "StartupTests",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "startuptests",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L666"
     },
     {
       "id": "collector_queue_pendingqueue",
@@ -316,17 +329,43 @@
       "source_location": "L46"
     },
     {
-      "id": "tests_test_collector_ingestsmoketests",
-      "label": "IngestSmokeTests",
+      "id": "collector_pvs_pvsautherror",
+      "label": "PVSAuthError",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 21,
-      "community_name": "test_collector.py",
+      "community": 20,
+      "community_name": "test_pvs.py",
       "file_type": "code",
-      "norm_label": "ingestsmoketests",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L718"
+      "norm_label": "pvsautherror",
+      "source_file": "collector/pvs.py",
+      "source_location": "L40"
+    },
+    {
+      "id": "collector_upload_autherror",
+      "label": "AuthError",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "code",
+      "norm_label": "autherror",
+      "source_file": "collector/upload.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "collector_upload_ingestclient",
+      "label": "IngestClient",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "code",
+      "norm_label": "ingestclient",
+      "source_file": "collector/upload.py",
+      "source_location": "L43"
     },
     {
       "id": "collector_upload_rejectederror",
@@ -335,7 +374,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": "rejectederror",
       "source_file": "collector/upload.py",
@@ -348,7 +387,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": "retryableerror",
       "source_file": "collector/upload.py",
@@ -361,11 +400,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": "uploaderror",
       "source_file": "collector/upload.py",
       "source_location": "L23"
+    },
+    {
+      "id": "tests_test_collector_ingestsmoketests",
+      "label": "IngestSmokeTests",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "code",
+      "norm_label": "ingestsmoketests",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L718"
     },
     {
       "id": "tests_test_collector_opener",
@@ -446,6 +498,71 @@
       "source_location": "L146"
     },
     {
+      "id": "tests_test_pvs_clock",
+      "label": "Clock",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "clock",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L119"
+    },
+    {
+      "id": "tests_test_pvs_compatibilitytests",
+      "label": "CompatibilityTests",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "compatibilitytests",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L297"
+    },
+    {
+      "id": "tests_test_pvs_fakeopener",
+      "label": "FakeOpener",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "fakeopener",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L73"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests",
+      "label": "ParsingTests",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "parsingtests",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L503"
+    },
+    {
+      "id": "tests_test_pvs_readchecktests",
+      "label": "ReadCheckTests",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "readchecktests",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L433"
+    },
+    {
       "id": "tests_test_collector_fakepvs",
       "label": "FakePVS",
       "_callable": true,
@@ -457,32 +574,6 @@
       "norm_label": "fakepvs",
       "source_file": "tests/test_collector.py",
       "source_location": "L52"
-    },
-    {
-      "id": "collector_pvs_pvserror",
-      "label": "PVSError",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": "pvserror",
-      "source_file": "collector/pvs.py",
-      "source_location": "L29"
-    },
-    {
-      "id": "tests_test_collector_startuptests",
-      "label": "StartupTests",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": "startuptests",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L666"
     },
     {
       "id": "workers_dashboard_src_index_env",
@@ -595,50 +686,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "panelsample",
       "source_file": "collector/model.py",
       "source_location": "L211"
-    },
-    {
-      "id": "collector_rollup_siteminute",
-      "label": "SiteMinute",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "siteminute",
-      "source_file": "collector/rollup.py",
-      "source_location": "L34"
-    },
-    {
-      "id": "collector_upload_autherror",
-      "label": "AuthError",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "autherror",
-      "source_file": "collector/upload.py",
-      "source_location": "L27"
-    },
-    {
-      "id": "collector_upload_ingestclient",
-      "label": "IngestClient",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "ingestclient",
-      "source_file": "collector/upload.py",
-      "source_location": "L43"
     },
     {
       "id": "tests_test_ingest_local_localingesttests",
@@ -647,7 +699,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "localingesttests",
       "source_file": "tests/test_ingest_local.py",
@@ -691,45 +743,6 @@
       "norm_label": "liverow",
       "source_file": "workers/dashboard/src/live.ts",
       "source_location": "L6"
-    },
-    {
-      "id": "tests_test_collector_fakeingest",
-      "label": "FakeIngest",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "FakeIngest",
-      "file_type": "code",
-      "norm_label": "fakeingest",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L125"
-    },
-    {
-      "id": "tests_test_pvs_clock",
-      "label": "Clock",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "code",
-      "norm_label": "clock",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L119"
-    },
-    {
-      "id": "tests_test_pvs_fakeopener",
-      "label": "FakeOpener",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "code",
-      "norm_label": "fakeopener",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L73"
     },
     {
       "id": "collector_main_collector",
@@ -797,19 +810,6 @@
       "source_location": "L58"
     },
     {
-      "id": "tests_test_pvs_compatibilitytests",
-      "label": "CompatibilityTests",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": "compatibilitytests",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L297"
-    },
-    {
       "id": "workers_ingest_test_weather_test_fakedb",
       "label": "FakeDb",
       "_callable": true,
@@ -821,19 +821,6 @@
       "norm_label": "fakedb",
       "source_file": "workers/ingest/test/weather.test.ts",
       "source_location": "L124"
-    },
-    {
-      "id": "tests_test_pvs_readchecktests",
-      "label": "ReadCheckTests",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "ReadCheckTests",
-      "file_type": "code",
-      "norm_label": "readchecktests",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L433"
     },
     {
       "id": "workers_shared_weather_sync_daylightrow",
@@ -972,11 +959,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
       "norm_label": "env",
       "source_file": "tests/test_collector.py",
       "source_location": "L33"
+    },
+    {
+      "id": "tests_test_collector_fakeingest",
+      "label": "FakeIngest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 91,
+      "community_name": "Env",
+      "file_type": "code",
+      "norm_label": "fakeingest",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L125"
     },
     {
       "id": "workers_ingest_src_store_conflictstatement",
@@ -1831,6 +1831,18 @@
       "source_location": "L69"
     },
     {
+      "id": "collector_model_floor_slot",
+      "label": "floor_slot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "model.py",
+      "file_type": "code",
+      "norm_label": "floor_slot()",
+      "source_file": "collector/model.py",
+      "source_location": "L73"
+    },
+    {
       "id": "collector_model_from_epoch",
       "label": "_from_epoch()",
       "_callable": true,
@@ -1853,6 +1865,18 @@
       "norm_label": "_index_key()",
       "source_file": "collector/model.py",
       "source_location": "L190"
+    },
+    {
+      "id": "collector_model_live_payload",
+      "label": "live_payload()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "model.py",
+      "file_type": "code",
+      "norm_label": "live_payload()",
+      "source_file": "collector/model.py",
+      "source_location": "L279"
     },
     {
       "id": "collector_model_livedata_fields",
@@ -1961,18 +1985,6 @@
       "norm_label": "utc_now()",
       "source_file": "collector/model.py",
       "source_location": "L59"
-    },
-    {
-      "id": "collector_queue_pendingqueue_enqueue",
-      "label": ".enqueue()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "model.py",
-      "file_type": "code",
-      "norm_label": ".enqueue()",
-      "source_file": "collector/queue.py",
-      "source_location": "L82"
     },
     {
       "id": "collector_rollup_siteminute_add",
@@ -2263,184 +2275,124 @@
       "source_location": "L30"
     },
     {
-      "id": "tests_test_pvs_inverter",
-      "label": "inverter()",
+      "id": "collector_rollup_siteminute_init",
+      "label": ".__init__()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": "inverter()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L43"
+      "norm_label": ".__init__()",
+      "source_file": "collector/rollup.py",
+      "source_location": "L37"
     },
     {
-      "id": "tests_test_pvs_livedata",
-      "label": "livedata()",
+      "id": "tests_test_collector_collectortestcase_test_enqueue_is_idempotent_and_survives_restart",
+      "label": ".test_enqueue_is_idempotent_and_survives_restart()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": "livedata()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L31"
+      "norm_label": ".test_enqueue_is_idempotent_and_survives_restart()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L386"
     },
     {
-      "id": "tests_test_pvs_parsingtests_test_finite_number_rejects_non_finite_and_blank",
-      "label": ".test_finite_number_rejects_non_finite_and_blank()",
+      "id": "tests_test_collector_collectortestcase_test_frozen_measurement_times_write_no_placeholder_panel_rows",
+      "label": ".test_frozen_measurement_times_write_no_placeholder_panel_rows()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": ".test_finite_number_rejects_non_finite_and_blank()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L546"
+      "norm_label": ".test_frozen_measurement_times_write_no_placeholder_panel_rows()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L307"
     },
     {
-      "id": "tests_test_pvs_parsingtests_test_live_payload_carries_times_and_quality",
-      "label": ".test_live_payload_carries_times_and_quality()",
+      "id": "tests_test_collector_collectortestcase_test_panel_sample_and_freshness_marker_commit_together",
+      "label": ".test_panel_sample_and_freshness_marker_commit_together()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": ".test_live_payload_carries_times_and_quality()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L580"
+      "norm_label": ".test_panel_sample_and_freshness_marker_commit_together()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L295"
     },
     {
-      "id": "tests_test_pvs_parsingtests_test_measured_time_formats",
-      "label": ".test_measured_time_formats()",
+      "id": "tests_test_collector_collectortestcase_test_partial_minute_below_the_sample_threshold",
+      "label": ".test_partial_minute_below_the_sample_threshold()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": ".test_measured_time_formats()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L536"
+      "norm_label": ".test_partial_minute_below_the_sample_threshold()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L234"
     },
     {
-      "id": "tests_test_pvs_parsingtests_test_meter_parsing_keeps_directional_counters_separate",
-      "label": ".test_meter_parsing_keeps_directional_counters_separate()",
+      "id": "tests_test_collector_collectortestcase_test_queue_holds_at_least_a_week_of_offline_minutes",
+      "label": ".test_queue_holds_at_least_a_week_of_offline_minutes()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": ".test_meter_parsing_keeps_directional_counters_separate()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L567"
+      "norm_label": ".test_queue_holds_at_least_a_week_of_offline_minutes()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L401"
     },
     {
-      "id": "tests_test_pvs_parsingtests_test_missing_measurement_time_is_clock_invalid_not_zero",
-      "label": ".test_missing_measurement_time_is_clock_invalid_not_zero()",
+      "id": "tests_test_collector_collectortestcase_test_record_ids_are_deterministic",
+      "label": ".test_record_ids_are_deterministic()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": ".test_missing_measurement_time_is_clock_invalid_not_zero()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L526"
+      "norm_label": ".test_record_ids_are_deterministic()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L213"
     },
     {
-      "id": "tests_test_pvs_parsingtests_test_panel_missing_measurement_time_stays_missing",
-      "label": ".test_panel_missing_measurement_time_stays_missing()",
+      "id": "tests_test_collector_collectortestcase_test_repeated_measurement_times_are_not_counted_twice",
+      "label": ".test_repeated_measurement_times_are_not_counted_twice()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": ".test_panel_missing_measurement_time_stays_missing()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L560"
+      "norm_label": ".test_repeated_measurement_times_are_not_counted_twice()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L244"
     },
     {
-      "id": "tests_test_pvs_parsingtests_test_panel_parsing_discovers_devices_and_keeps_ac_dc_apart",
-      "label": ".test_panel_parsing_discovers_devices_and_keeps_ac_dc_apart()",
+      "id": "tests_test_collector_collectortestcase_test_unparsable_measurement_time_is_clock_invalid",
+      "label": ".test_unparsable_measurement_time_is_clock_invalid()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
-      "norm_label": ".test_panel_parsing_discovers_devices_and_keeps_ac_dc_apart()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L552"
+      "norm_label": ".test_unparsable_measurement_time_is_clock_invalid()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L254"
     },
     {
-      "id": "tests_test_pvs_parsingtests_test_restart_detection_across_a_long_observation_gap",
-      "label": ".test_restart_detection_across_a_long_observation_gap()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "ParsingTests",
-      "file_type": "code",
-      "norm_label": ".test_restart_detection_across_a_long_observation_gap()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L593"
-    },
-    {
-      "id": "tests_test_pvs_parsingtests_test_site_units_signs_and_missing_values",
-      "label": ".test_site_units_signs_and_missing_values()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "ParsingTests",
-      "file_type": "code",
-      "norm_label": ".test_site_units_signs_and_missing_values()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L504"
-    },
-    {
-      "id": "tests_test_pvs_parsingtests_test_uptime_regression_detection",
-      "label": ".test_uptime_regression_detection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "ParsingTests",
-      "file_type": "code",
-      "norm_label": ".test_uptime_regression_detection()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L588"
-    },
-    {
-      "id": "tests_test_pvs_parsingtests_test_zero_is_measured_zero_and_not_missing",
-      "label": ".test_zero_is_measured_zero_and_not_missing()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "ParsingTests",
-      "file_type": "code",
-      "norm_label": ".test_zero_is_measured_zero_and_not_missing()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L531"
-    },
-    {
-      "id": "tests_test_pvs_published",
+      "id": "tests_test_collector_published",
       "label": "published()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
+      "community_name": "SiteMinute",
       "file_type": "code",
       "norm_label": "published()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L27"
-    },
-    {
-      "id": "tests_test_pvs_readchecktests_test_documented_envelope_and_nested_data_work_through_the_whole_check",
-      "label": ".test_documented_envelope_and_nested_data_work_through_the_whole_check()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "ParsingTests",
-      "file_type": "code",
-      "norm_label": ".test_documented_envelope_and_nested_data_work_through_the_whole_check()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L485"
+      "source_file": "tests/test_collector.py",
+      "source_location": "L29"
     },
     {
       "id": "workers_dashboard_src_index_login",
@@ -2911,6 +2863,18 @@
       "source_location": "L570"
     },
     {
+      "id": "tests_test_collector_collectortestcase_test_collector_logs_safe_structured_failure_without_exception_text_fail",
+      "label": "fail()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "CollectorTestCase",
+      "file_type": "code",
+      "norm_label": "fail()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L575"
+    },
+    {
       "id": "tests_test_collector_collectortestcase_test_equal_power_with_new_measurement_time_is_a_valid_sample",
       "label": ".test_equal_power_with_new_measurement_time_is_a_valid_sample()",
       "_callable": true,
@@ -2947,18 +2911,6 @@
       "source_location": "L488"
     },
     {
-      "id": "tests_test_collector_collectortestcase_test_frozen_measurement_times_write_no_placeholder_panel_rows",
-      "label": ".test_frozen_measurement_times_write_no_placeholder_panel_rows()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "CollectorTestCase",
-      "file_type": "code",
-      "norm_label": ".test_frozen_measurement_times_write_no_placeholder_panel_rows()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L307"
-    },
-    {
       "id": "tests_test_collector_collectortestcase_test_gateway_diagnostics_do_not_block_collection_or_enter_history",
       "label": ".test_gateway_diagnostics_do_not_block_collection_or_enter_history()",
       "_callable": true,
@@ -2969,18 +2921,6 @@
       "norm_label": ".test_gateway_diagnostics_do_not_block_collection_or_enter_history()",
       "source_file": "tests/test_collector.py",
       "source_location": "L172"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_health_observation_survives_failed_reauthentication",
-      "label": ".test_health_observation_survives_failed_reauthentication()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "CollectorTestCase",
-      "file_type": "code",
-      "norm_label": ".test_health_observation_survives_failed_reauthentication()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L516"
     },
     {
       "id": "tests_test_collector_collectortestcase_test_heartbeat_expires_values_even_before_a_failed_read",
@@ -3031,6 +2971,18 @@
       "source_location": "L552"
     },
     {
+      "id": "tests_test_collector_collectortestcase_test_live_snapshots_are_not_queued_for_replay",
+      "label": ".test_live_snapshots_are_not_queued_for_replay()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "CollectorTestCase",
+      "file_type": "code",
+      "norm_label": ".test_live_snapshots_are_not_queued_for_replay()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L450"
+    },
+    {
       "id": "tests_test_collector_collectortestcase_test_live_upload_is_not_waiting_on_a_closed_minute",
       "label": ".test_live_upload_is_not_waiting_on_a_closed_minute()",
       "_callable": true,
@@ -3079,18 +3031,6 @@
       "source_location": "L315"
     },
     {
-      "id": "tests_test_collector_collectortestcase_test_panel_sample_and_freshness_marker_commit_together",
-      "label": ".test_panel_sample_and_freshness_marker_commit_together()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "CollectorTestCase",
-      "file_type": "code",
-      "norm_label": ".test_panel_sample_and_freshness_marker_commit_together()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L295"
-    },
-    {
       "id": "tests_test_collector_collectortestcase_test_panel_sample_survives_restart_before_next_slot",
       "label": ".test_panel_sample_survives_restart_before_next_slot()",
       "_callable": true,
@@ -3101,18 +3041,6 @@
       "norm_label": ".test_panel_sample_survives_restart_before_next_slot()",
       "source_file": "tests/test_collector.py",
       "source_location": "L281"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_partial_minute_below_the_sample_threshold",
-      "label": ".test_partial_minute_below_the_sample_threshold()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "CollectorTestCase",
-      "file_type": "code",
-      "norm_label": ".test_partial_minute_below_the_sample_threshold()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L234"
     },
     {
       "id": "tests_test_collector_collectortestcase_test_reboot_with_larger_uptime_uses_monotonic_time_after_missing_read",
@@ -3139,16 +3067,16 @@
       "source_location": "L584"
     },
     {
-      "id": "tests_test_collector_collectortestcase_test_repeated_measurement_times_are_not_counted_twice",
-      "label": ".test_repeated_measurement_times_are_not_counted_twice()",
+      "id": "tests_test_collector_collectortestcase_test_rejected_records_are_isolated_not_retried_forever",
+      "label": ".test_rejected_records_are_isolated_not_retried_forever()",
       "_callable": true,
       "_origin": "ast",
       "community": 15,
       "community_name": "CollectorTestCase",
       "file_type": "code",
-      "norm_label": ".test_repeated_measurement_times_are_not_counted_twice()",
+      "norm_label": ".test_rejected_records_are_isolated_not_retried_forever()",
       "source_file": "tests/test_collector.py",
-      "source_location": "L244"
+      "source_location": "L429"
     },
     {
       "id": "tests_test_collector_collectortestcase_test_source_error_minute_when_every_read_fails",
@@ -3175,28 +3103,16 @@
       "source_location": "L209"
     },
     {
-      "id": "tests_test_collector_fakepvs_authenticate",
-      "label": ".authenticate()",
+      "id": "tests_test_collector_collectortestcase_test_wan_loss_queues_then_replays_identical_records",
+      "label": ".test_wan_loss_queues_then_replays_identical_records()",
       "_callable": true,
       "_origin": "ast",
       "community": 15,
       "community_name": "CollectorTestCase",
       "file_type": "code",
-      "norm_label": ".authenticate()",
+      "norm_label": ".test_wan_loss_queues_then_replays_identical_records()",
       "source_file": "tests/test_collector.py",
-      "source_location": "L68"
-    },
-    {
-      "id": "tests_test_collector_published",
-      "label": "published()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "CollectorTestCase",
-      "file_type": "code",
-      "norm_label": "published()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L29"
+      "source_location": "L407"
     },
     {
       "id": "scripts_checks_month_check_buildsql",
@@ -3415,16 +3331,76 @@
       "source_location": "L483"
     },
     {
-      "id": "collector_pvs_pvsautherror_init",
-      "label": ".__init__()",
+      "id": "collector_main_build_parser",
+      "label": "build_parser()",
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "collector/pvs.py",
-      "source_location": "L43"
+      "norm_label": "build_parser()",
+      "source_file": "collector/main.py",
+      "source_location": "L493"
+    },
+    {
+      "id": "collector_main_check_reads",
+      "label": "check_reads()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "check_reads()",
+      "source_file": "collector/main.py",
+      "source_location": "L408"
+    },
+    {
+      "id": "collector_main_connect_pvs",
+      "label": "connect_pvs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "connect_pvs()",
+      "source_file": "collector/main.py",
+      "source_location": "L476"
+    },
+    {
+      "id": "collector_main_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "collector/main.py",
+      "source_location": "L505"
+    },
+    {
+      "id": "collector_main_main_stop_on_sigterm",
+      "label": "stop_on_sigterm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "stop_on_sigterm()",
+      "source_file": "collector/main.py",
+      "source_location": "L523"
+    },
+    {
+      "id": "collector_model_gateway_info",
+      "label": "gateway_info()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "gateway_info()",
+      "source_file": "collector/model.py",
+      "source_location": "L180"
     },
     {
       "id": "collector_pvs_pvsclient_authenticate",
@@ -3432,23 +3408,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": ".authenticate()",
       "source_file": "collector/pvs.py",
       "source_location": "L117"
-    },
-    {
-      "id": "collector_pvs_pvsclient_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "PVSClient",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "collector/pvs.py",
-      "source_location": "L51"
     },
     {
       "id": "collector_pvs_pvsclient_read",
@@ -3456,7 +3420,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": "._read()",
       "source_file": "collector/pvs.py",
@@ -3468,7 +3432,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": ".read_gateway()",
       "source_file": "collector/pvs.py",
@@ -3480,7 +3444,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": ".read_group()",
       "source_file": "collector/pvs.py",
@@ -3492,7 +3456,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": ".read_health()",
       "source_file": "collector/pvs.py",
@@ -3504,7 +3468,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": ".read_inverters()",
       "source_file": "collector/pvs.py",
@@ -3516,7 +3480,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": ".read_meters()",
       "source_file": "collector/pvs.py",
@@ -3528,7 +3492,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": ".read_site()",
       "source_file": "collector/pvs.py",
@@ -3540,11 +3504,83 @@
       "_callable": true,
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "code",
       "norm_label": "._request()",
       "source_file": "collector/pvs.py",
       "source_location": "L71"
+    },
+    {
+      "id": "tests_test_collector_startuptests_test_duration_limits_startup_retries",
+      "label": ".test_duration_limits_startup_retries()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": ".test_duration_limits_startup_retries()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L681"
+    },
+    {
+      "id": "tests_test_collector_startuptests_test_duration_limits_startup_retries_init",
+      "label": "__init__()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "__init__()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L686"
+    },
+    {
+      "id": "tests_test_collector_startuptests_test_sigterm_closes_queue_during_startup",
+      "label": ".test_sigterm_closes_queue_during_startup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": ".test_sigterm_closes_queue_during_startup()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L696"
+    },
+    {
+      "id": "tests_test_collector_startuptests_test_startup_waits_for_the_pvs_instead_of_crash_looping",
+      "label": ".test_startup_waits_for_the_pvs_instead_of_crash_looping()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": ".test_startup_waits_for_the_pvs_instead_of_crash_looping()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L667"
+    },
+    {
+      "id": "tests_test_collector_startuptests_test_startup_waits_for_the_pvs_instead_of_crash_looping_init",
+      "label": "__init__()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "__init__()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L672"
+    },
+    {
+      "id": "tests_test_pvs_readchecktests_test_authentication_failure_is_reported_without_traceback_or_secrets",
+      "label": ".test_authentication_failure_is_reported_without_traceback_or_secrets()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": ".test_authentication_failure_is_reported_without_traceback_or_secrets()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L479"
     },
     {
       "id": "scripts_checks_page_render_check_page",
@@ -3895,16 +3931,40 @@
       "source_location": "L177"
     },
     {
-      "id": "collector_upload_ids_from",
-      "label": "_ids_from()",
+      "id": "collector_pvs_pvsautherror_init",
+      "label": ".__init__()",
       "_callable": true,
       "_origin": "ast",
       "community": 20,
       "community_name": "test_pvs.py",
       "file_type": "code",
-      "norm_label": "_ids_from()",
-      "source_file": "collector/upload.py",
-      "source_location": "L109"
+      "norm_label": ".__init__()",
+      "source_file": "collector/pvs.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "collector_pvs_pvsclient_init",
+      "label": ".__init__()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "test_pvs.py",
+      "file_type": "code",
+      "norm_label": ".__init__()",
+      "source_file": "collector/pvs.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "collector_pvs_pvserror_init",
+      "label": ".__init__()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "test_pvs.py",
+      "file_type": "code",
+      "norm_label": ".__init__()",
+      "source_file": "collector/pvs.py",
+      "source_location": "L32"
     },
     {
       "id": "pilot_now_utc",
@@ -3955,18 +4015,6 @@
       "source_location": "L25"
     },
     {
-      "id": "tests_test_pvs_authenticationtests_test_the_real_opener_keeps_the_jar_the_client_clears",
-      "label": ".test_the_real_opener_keeps_the_jar_the_client_clears()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "test_pvs.py",
-      "file_type": "code",
-      "norm_label": ".test_the_real_opener_keeps_the_jar_the_client_clears()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L191"
-    },
-    {
       "id": "scripts_checks_check_graph_hook_main",
       "label": "main()",
       "_callable": true,
@@ -4015,12 +4063,24 @@
       "source_location": "L10"
     },
     {
+      "id": "collector_upload_ids_from",
+      "label": "_ids_from()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "code",
+      "norm_label": "_ids_from()",
+      "source_file": "collector/upload.py",
+      "source_location": "L109"
+    },
+    {
       "id": "collector_upload_ingestclient_init",
       "label": ".__init__()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": ".__init__()",
       "source_file": "collector/upload.py",
@@ -4032,7 +4092,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": ".post_records()",
       "source_file": "collector/upload.py",
@@ -4044,7 +4104,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": ".put_live()",
       "source_file": "collector/upload.py",
@@ -4056,7 +4116,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": "._raise()",
       "source_file": "collector/upload.py",
@@ -4068,7 +4128,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": "._send()",
       "source_file": "collector/upload.py",
@@ -4080,7 +4140,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": "_parse_json()",
       "source_file": "collector/upload.py",
@@ -4092,47 +4152,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": ".__init__()",
       "source_file": "collector/upload.py",
       "source_location": "L38"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_live_snapshots_are_not_queued_for_replay",
-      "label": ".test_live_snapshots_are_not_queued_for_replay()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "RejectedError",
-      "file_type": "code",
-      "norm_label": ".test_live_snapshots_are_not_queued_for_replay()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L450"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_rejected_records_are_isolated_not_retried_forever",
-      "label": ".test_rejected_records_are_isolated_not_retried_forever()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "RejectedError",
-      "file_type": "code",
-      "norm_label": ".test_rejected_records_are_isolated_not_retried_forever()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L429"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_wan_loss_queues_then_replays_identical_records",
-      "label": ".test_wan_loss_queues_then_replays_identical_records()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "RejectedError",
-      "file_type": "code",
-      "norm_label": ".test_wan_loss_queues_then_replays_identical_records()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L407"
     },
     {
       "id": "scripts_checks_local_cloud_check_check",
@@ -4229,6 +4253,30 @@
       "norm_label": "wrangler()",
       "source_file": "scripts/checks/local-cloud-check.mjs",
       "source_location": "L38"
+    },
+    {
+      "id": "scripts_checks_page_render_check_result",
+      "label": "result()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "local-cloud-check.mjs",
+      "file_type": "code",
+      "norm_label": "result()",
+      "source_file": "scripts/checks/page-render-check.mjs",
+      "source_location": "L32"
+    },
+    {
+      "id": "scripts_install_cloudflare_account_accountsfrom",
+      "label": "accountsFrom()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "local-cloud-check.mjs",
+      "file_type": "code",
+      "norm_label": "accountsfrom()",
+      "source_file": "scripts/install/cloudflare-account.mjs",
+      "source_location": "L4"
     },
     {
       "id": "tests_test_collector_opener_init",
@@ -5188,7 +5236,7 @@
       "file_type": "code",
       "norm_label": "minutewindow()",
       "source_file": "web/check.js",
-      "source_location": "L137"
+      "source_location": "L140"
     },
     {
       "id": "web_check_verdict",
@@ -5200,7 +5248,7 @@
       "file_type": "code",
       "norm_label": "verdict()",
       "source_file": "web/check.js",
-      "source_location": "L72"
+      "source_location": "L75"
     },
     {
       "id": "web_insights_daylightverdict",
@@ -5467,6 +5515,18 @@
       "source_location": "L264"
     },
     {
+      "id": "tests_test_pvs_authenticationtests_test_missing_serial_is_an_authentication_failure",
+      "label": ".test_missing_serial_is_an_authentication_failure()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_missing_serial_is_an_authentication_failure()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L251"
+    },
+    {
       "id": "tests_test_pvs_authenticationtests_test_never_requests_the_full_tree_or_a_write_path",
       "label": ".test_never_requests_the_full_tree_or_a_write_path()",
       "_callable": true,
@@ -5527,6 +5587,18 @@
       "source_location": "L269"
     },
     {
+      "id": "tests_test_pvs_authenticationtests_test_the_real_opener_keeps_the_jar_the_client_clears",
+      "label": ".test_the_real_opener_keeps_the_jar_the_client_clears()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_the_real_opener_keeps_the_jar_the_client_clears()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L191"
+    },
+    {
       "id": "tests_test_pvs_authenticationtests_test_transport_errors_do_not_leak_the_request",
       "label": ".test_transport_errors_do_not_leak_the_request()",
       "_callable": true,
@@ -5549,6 +5621,78 @@
       "norm_label": "client()",
       "source_file": "tests/test_pvs.py",
       "source_location": "L141"
+    },
+    {
+      "id": "tests_test_pvs_clock_init",
+      "label": ".__init__()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".__init__()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L122"
+    },
+    {
+      "id": "tests_test_pvs_clock_monotonic",
+      "label": ".monotonic()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".monotonic()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L126"
+    },
+    {
+      "id": "tests_test_pvs_clock_sleep",
+      "label": ".sleep()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".sleep()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L129"
+    },
+    {
+      "id": "tests_test_pvs_compatibilitytests_test_documented_nested_devices_preserve_units_unknowns_and_identity",
+      "label": ".test_documented_nested_devices_preserve_units_unknowns_and_identity()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_documented_nested_devices_preserve_units_unknowns_and_identity()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L402"
+    },
+    {
+      "id": "tests_test_pvs_compatibilitytests_test_flat_fields_take_precedence_over_nested_fields",
+      "label": ".test_flat_fields_take_precedence_over_nested_fields()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_flat_fields_take_precedence_over_nested_fields()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L418"
+    },
+    {
+      "id": "tests_test_pvs_compatibilitytests_test_gateway_diagnostics_are_allowlisted_and_safe",
+      "label": ".test_gateway_diagnostics_are_allowlisted_and_safe()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_gateway_diagnostics_are_allowlisted_and_safe()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L426"
     },
     {
       "id": "tests_test_pvs_compatibilitytests_test_group_recovery_does_not_stack_http_and_device_error_retries",
@@ -5599,6 +5743,90 @@
       "source_location": "L361"
     },
     {
+      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry",
+      "label": ".test_real_http_cookie_session_recovers_after_expiry()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_real_http_cookie_session_recovers_after_expiry()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L298"
+    },
+    {
+      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry_do_get",
+      "label": "do_GET()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "do_get()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L303"
+    },
+    {
+      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry_local_opener",
+      "label": "local_opener()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "local_opener()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L341"
+    },
+    {
+      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry_local_opener_open",
+      "label": "open()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "open()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L345"
+    },
+    {
+      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry_log_message",
+      "label": "log_message()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "log_message()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L331"
+    },
+    {
+      "id": "tests_test_pvs_fakeopener_init",
+      "label": ".__init__()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".__init__()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "tests_test_pvs_fakeopener_open",
+      "label": ".open()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".open()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L81"
+    },
+    {
       "id": "tests_test_pvs_http_error",
       "label": "http_error()",
       "_callable": true,
@@ -5611,6 +5839,30 @@
       "source_location": "L95"
     },
     {
+      "id": "tests_test_pvs_inverter",
+      "label": "inverter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "inverter()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "tests_test_pvs_livedata",
+      "label": "livedata()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "livedata()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L31"
+    },
+    {
       "id": "tests_test_pvs_make_client",
       "label": "make_client()",
       "_callable": true,
@@ -5621,6 +5873,222 @@
       "norm_label": "make_client()",
       "source_file": "tests/test_pvs.py",
       "source_location": "L134"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_finite_number_rejects_non_finite_and_blank",
+      "label": ".test_finite_number_rejects_non_finite_and_blank()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_finite_number_rejects_non_finite_and_blank()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L546"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_live_payload_carries_times_and_quality",
+      "label": ".test_live_payload_carries_times_and_quality()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_live_payload_carries_times_and_quality()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L580"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_measured_time_formats",
+      "label": ".test_measured_time_formats()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_measured_time_formats()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L536"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_meter_parsing_keeps_directional_counters_separate",
+      "label": ".test_meter_parsing_keeps_directional_counters_separate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_meter_parsing_keeps_directional_counters_separate()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L567"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_missing_measurement_time_is_clock_invalid_not_zero",
+      "label": ".test_missing_measurement_time_is_clock_invalid_not_zero()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_missing_measurement_time_is_clock_invalid_not_zero()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L526"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_panel_missing_measurement_time_stays_missing",
+      "label": ".test_panel_missing_measurement_time_stays_missing()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_panel_missing_measurement_time_stays_missing()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L560"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_panel_parsing_discovers_devices_and_keeps_ac_dc_apart",
+      "label": ".test_panel_parsing_discovers_devices_and_keeps_ac_dc_apart()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_panel_parsing_discovers_devices_and_keeps_ac_dc_apart()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L552"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_restart_detection_across_a_long_observation_gap",
+      "label": ".test_restart_detection_across_a_long_observation_gap()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_restart_detection_across_a_long_observation_gap()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L593"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_site_units_signs_and_missing_values",
+      "label": ".test_site_units_signs_and_missing_values()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_site_units_signs_and_missing_values()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L504"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_uptime_regression_detection",
+      "label": ".test_uptime_regression_detection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_uptime_regression_detection()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L588"
+    },
+    {
+      "id": "tests_test_pvs_parsingtests_test_zero_is_measured_zero_and_not_missing",
+      "label": ".test_zero_is_measured_zero_and_not_missing()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_zero_is_measured_zero_and_not_missing()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L531"
+    },
+    {
+      "id": "tests_test_pvs_published",
+      "label": "published()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": "published()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "tests_test_pvs_readchecktests_run_check",
+      "label": ".run_check()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".run_check()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L434"
+    },
+    {
+      "id": "tests_test_pvs_readchecktests_test_documented_envelope_and_nested_data_work_through_the_whole_check",
+      "label": ".test_documented_envelope_and_nested_data_work_through_the_whole_check()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_documented_envelope_and_nested_data_work_through_the_whole_check()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L485"
+    },
+    {
+      "id": "tests_test_pvs_readchecktests_test_metadata_failure_is_optional_but_missing_core_site_fields_fail",
+      "label": ".test_metadata_failure_is_optional_but_missing_core_site_fields_fail()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_metadata_failure_is_optional_but_missing_core_site_fields_fail()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L460"
+    },
+    {
+      "id": "tests_test_pvs_readchecktests_test_stale_and_future_site_time_fail_but_measured_zero_passes",
+      "label": ".test_stale_and_future_site_time_fail_but_measured_zero_passes()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_stale_and_future_site_time_fail_but_measured_zero_passes()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L469"
+    },
+    {
+      "id": "tests_test_pvs_readchecktests_test_synthetic_pvs5_shared_fields_use_the_existing_pipeline",
+      "label": ".test_synthetic_pvs5_shared_fields_use_the_existing_pipeline()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_synthetic_pvs5_shared_fields_use_the_existing_pipeline()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L443"
+    },
+    {
+      "id": "tests_test_pvs_readchecktests_test_unknown_version_and_empty_groups_do_not_claim_absence_or_block_site",
+      "label": ".test_unknown_version_and_empty_groups_do_not_claim_absence_or_block_site()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "code",
+      "norm_label": ".test_unknown_version_and_empty_groups_do_not_claim_absence_or_block_site()",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L452"
     },
     {
       "id": "tests_test_pvs_routes",
@@ -5755,28 +6223,16 @@
       "source_location": "L86"
     },
     {
-      "id": "collector_pvs_pvserror_init",
-      "label": ".__init__()",
+      "id": "tests_test_collector_collectortestcase_test_health_observation_survives_failed_reauthentication",
+      "label": ".test_health_observation_survives_failed_reauthentication()",
       "_callable": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "PVSError",
+      "community_name": ".test_health_observation_survives_failed_reauthentication",
       "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "collector/pvs.py",
-      "source_location": "L32"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_collector_logs_safe_structured_failure_without_exception_text_fail",
-      "label": "fail()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": "fail()",
+      "norm_label": ".test_health_observation_survives_failed_reauthentication()",
       "source_file": "tests/test_collector.py",
-      "source_location": "L575"
+      "source_location": "L516"
     },
     {
       "id": "tests_test_collector_collectortestcase_test_health_observation_survives_failed_reauthentication_authenticate",
@@ -5784,83 +6240,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "PVSError",
+      "community_name": ".test_health_observation_survives_failed_reauthentication",
       "file_type": "code",
       "norm_label": "authenticate()",
       "source_file": "tests/test_collector.py",
       "source_location": "L522"
     },
     {
-      "id": "tests_test_collector_startuptests_test_duration_limits_startup_retries",
-      "label": ".test_duration_limits_startup_retries()",
+      "id": "tests_test_collector_fakepvs_authenticate",
+      "label": ".authenticate()",
       "_callable": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "PVSError",
+      "community_name": ".test_health_observation_survives_failed_reauthentication",
       "file_type": "code",
-      "norm_label": ".test_duration_limits_startup_retries()",
+      "norm_label": ".authenticate()",
       "source_file": "tests/test_collector.py",
-      "source_location": "L681"
-    },
-    {
-      "id": "tests_test_collector_startuptests_test_duration_limits_startup_retries_init",
-      "label": "__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": "__init__()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L686"
-    },
-    {
-      "id": "tests_test_collector_startuptests_test_sigterm_closes_queue_during_startup",
-      "label": ".test_sigterm_closes_queue_during_startup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": ".test_sigterm_closes_queue_during_startup()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L696"
-    },
-    {
-      "id": "tests_test_collector_startuptests_test_startup_waits_for_the_pvs_instead_of_crash_looping",
-      "label": ".test_startup_waits_for_the_pvs_instead_of_crash_looping()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": ".test_startup_waits_for_the_pvs_instead_of_crash_looping()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L667"
-    },
-    {
-      "id": "tests_test_collector_startuptests_test_startup_waits_for_the_pvs_instead_of_crash_looping_init",
-      "label": "__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": "__init__()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L672"
-    },
-    {
-      "id": "tests_test_pvs_readchecktests_test_authentication_failure_is_reported_without_traceback_or_secrets",
-      "label": ".test_authentication_failure_is_reported_without_traceback_or_secrets()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": ".test_authentication_failure_is_reported_without_traceback_or_secrets()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L479"
+      "source_location": "L68"
     },
     {
       "id": "scripts_install_github_user_resolveuser",
@@ -6019,48 +6415,12 @@
       "source_location": "L202"
     },
     {
-      "id": "collector_main_collector_record_panels",
-      "label": "._record_panels()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "._record_panels()",
-      "source_file": "collector/main.py",
-      "source_location": "L306"
-    },
-    {
-      "id": "collector_model_floor_slot",
-      "label": "floor_slot()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "floor_slot()",
-      "source_file": "collector/model.py",
-      "source_location": "L73"
-    },
-    {
-      "id": "collector_model_live_payload",
-      "label": "live_payload()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "live_payload()",
-      "source_file": "collector/model.py",
-      "source_location": "L279"
-    },
-    {
       "id": "collector_model_record_id",
       "label": "record_id()",
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "record_id()",
       "source_file": "collector/model.py",
@@ -6072,11 +6432,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "to_iso()",
       "source_file": "collector/model.py",
       "source_location": "L63"
+    },
+    {
+      "id": "collector_queue_pendingqueue_enqueue",
+      "label": ".enqueue()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "test_ingest_local.py",
+      "file_type": "code",
+      "norm_label": ".enqueue()",
+      "source_file": "collector/queue.py",
+      "source_location": "L82"
     },
     {
       "id": "collector_rollup_panel_entry",
@@ -6084,7 +6456,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "panel_entry()",
       "source_file": "collector/rollup.py",
@@ -6096,23 +6468,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "panel_sample_record()",
       "source_file": "collector/rollup.py",
       "source_location": "L135"
-    },
-    {
-      "id": "collector_rollup_siteminute_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "collector/rollup.py",
-      "source_location": "L37"
     },
     {
       "id": "collector_rollup_siteminute_record",
@@ -6120,59 +6480,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": ".record()",
       "source_file": "collector/rollup.py",
       "source_location": "L62"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_enqueue_is_idempotent_and_survives_restart",
-      "label": ".test_enqueue_is_idempotent_and_survives_restart()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": ".test_enqueue_is_idempotent_and_survives_restart()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L386"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_queue_holds_at_least_a_week_of_offline_minutes",
-      "label": ".test_queue_holds_at_least_a_week_of_offline_minutes()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": ".test_queue_holds_at_least_a_week_of_offline_minutes()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L401"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_record_ids_are_deterministic",
-      "label": ".test_record_ids_are_deterministic()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": ".test_record_ids_are_deterministic()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L213"
-    },
-    {
-      "id": "tests_test_collector_collectortestcase_test_unparsable_measurement_time_is_clock_invalid",
-      "label": ".test_unparsable_measurement_time_is_clock_invalid()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": ".test_unparsable_measurement_time_is_clock_invalid()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L254"
     },
     {
       "id": "tests_test_ingest_local_localingesttests_panel_sample",
@@ -6180,7 +6492,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": ".panel_sample()",
       "source_file": "tests/test_ingest_local.py",
@@ -6192,7 +6504,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": ".setup()",
       "source_file": "tests/test_ingest_local.py",
@@ -6204,7 +6516,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": ".site_minute()",
       "source_file": "tests/test_ingest_local.py",
@@ -6216,7 +6528,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": ".test_live_history_replay_and_conflict()",
       "source_file": "tests/test_ingest_local.py",
@@ -6228,7 +6540,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": ".test_unknown_fields_and_bad_tokens_are_rejected()",
       "source_file": "tests/test_ingest_local.py",
@@ -6280,7 +6592,7 @@
       "file_type": "code",
       "norm_label": "link()",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L47"
+      "source_location": "L52"
     },
     {
       "id": "scripts_checks_site_check_addeventlistener",
@@ -6292,7 +6604,7 @@
       "file_type": "code",
       "norm_label": "addeventlistener()",
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L41"
+      "source_location": "L52"
     },
     {
       "id": "scripts_checks_site_check_fetch",
@@ -6304,7 +6616,7 @@
       "file_type": "code",
       "norm_label": "fetch()",
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L41"
+      "source_location": "L52"
     },
     {
       "id": "scripts_checks_site_check_files",
@@ -6328,7 +6640,7 @@
       "file_type": "code",
       "norm_label": "getcurrentposition()",
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L42"
+      "source_location": "L53"
     },
     {
       "id": "scripts_checks_site_check_getitem",
@@ -6340,7 +6652,7 @@
       "file_type": "code",
       "norm_label": "getitem()",
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L45"
+      "source_location": "L56"
     },
     {
       "id": "scripts_checks_site_check_setitem",
@@ -6352,7 +6664,7 @@
       "file_type": "code",
       "norm_label": "setitem()",
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L45"
+      "source_location": "L56"
     },
     {
       "id": "workers_ingest_src_index_authorized",
@@ -6511,28 +6823,64 @@
       "source_location": "L170"
     },
     {
-      "id": "scripts_checks_page_render_check_result",
-      "label": "result()",
+      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "label": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged()",
       "_callable": true,
       "_origin": "ast",
       "community": 52,
-      "community_name": "ref_node_child_process",
+      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
       "file_type": "code",
-      "norm_label": "result()",
-      "source_file": "scripts/checks/page-render-check.mjs",
-      "source_location": "L32"
+      "norm_label": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L721"
     },
     {
-      "id": "scripts_install_cloudflare_account_accountsfrom",
-      "label": "accountsFrom()",
+      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged_do_post",
+      "label": "do_POST()",
       "_callable": true,
       "_origin": "ast",
       "community": 52,
-      "community_name": "ref_node_child_process",
+      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
       "file_type": "code",
-      "norm_label": "accountsfrom()",
-      "source_file": "scripts/install/cloudflare-account.mjs",
-      "source_location": "L4"
+      "norm_label": "do_post()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L739"
+    },
+    {
+      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged_do_put",
+      "label": "do_PUT()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 52,
+      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "file_type": "code",
+      "norm_label": "do_put()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L733"
+    },
+    {
+      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged_log_message",
+      "label": "log_message()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 52,
+      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "file_type": "code",
+      "norm_label": "log_message()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L725"
+    },
+    {
+      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged_payload",
+      "label": "_payload()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 52,
+      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "file_type": "code",
+      "norm_label": "_payload()",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L728"
     },
     {
       "id": "workers_dashboard_src_live_presentlatest",
@@ -6557,126 +6905,6 @@
       "norm_label": "toiso()",
       "source_file": "workers/dashboard/src/live.ts",
       "source_location": "L29"
-    },
-    {
-      "id": "tests_test_collector_fakeingest_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "FakeIngest",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L128"
-    },
-    {
-      "id": "tests_test_collector_fakeingest_post_records",
-      "label": ".post_records()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "FakeIngest",
-      "file_type": "code",
-      "norm_label": ".post_records()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L143"
-    },
-    {
-      "id": "tests_test_collector_fakeingest_put_live",
-      "label": ".put_live()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "FakeIngest",
-      "file_type": "code",
-      "norm_label": ".put_live()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L139"
-    },
-    {
-      "id": "tests_test_collector_fakeingest_raise",
-      "label": "._raise()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 54,
-      "community_name": "FakeIngest",
-      "file_type": "code",
-      "norm_label": "._raise()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L135"
-    },
-    {
-      "id": "tests_test_pvs_authenticationtests_test_missing_serial_is_an_authentication_failure",
-      "label": ".test_missing_serial_is_an_authentication_failure()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "code",
-      "norm_label": ".test_missing_serial_is_an_authentication_failure()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L251"
-    },
-    {
-      "id": "tests_test_pvs_clock_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L122"
-    },
-    {
-      "id": "tests_test_pvs_clock_monotonic",
-      "label": ".monotonic()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "code",
-      "norm_label": ".monotonic()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L126"
-    },
-    {
-      "id": "tests_test_pvs_clock_sleep",
-      "label": ".sleep()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "code",
-      "norm_label": ".sleep()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L129"
-    },
-    {
-      "id": "tests_test_pvs_fakeopener_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L76"
-    },
-    {
-      "id": "tests_test_pvs_fakeopener_open",
-      "label": ".open()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "code",
-      "norm_label": ".open()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L81"
     },
     {
       "id": "collector_main_collector_check_queue_capacity",
@@ -6845,6 +7073,18 @@
       "norm_label": "._read_site()",
       "source_file": "collector/main.py",
       "source_location": "L235"
+    },
+    {
+      "id": "collector_main_collector_record_panels",
+      "label": "._record_panels()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "Collector",
+      "file_type": "code",
+      "norm_label": "._record_panels()",
+      "source_file": "collector/main.py",
+      "source_location": "L306"
     },
     {
       "id": "collector_main_collector_rollup",
@@ -7231,6 +7471,18 @@
       "source_location": "L112"
     },
     {
+      "id": "scripts_checks_introduction_check_assetsource",
+      "label": "assetSource()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "introduction-check.mjs",
+      "file_type": "code",
+      "norm_label": "assetsource()",
+      "source_file": "scripts/checks/introduction-check.mjs",
+      "source_location": "L11"
+    },
+    {
       "id": "scripts_checks_introduction_check_preventdefault",
       "label": "preventDefault()",
       "_callable": true,
@@ -7240,7 +7492,7 @@
       "file_type": "code",
       "norm_label": "preventdefault()",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L90"
+      "source_location": "L95"
     },
     {
       "id": "web_app_dayentry",
@@ -7867,102 +8119,6 @@
       "source_location": "L3"
     },
     {
-      "id": "tests_test_pvs_compatibilitytests_test_documented_nested_devices_preserve_units_unknowns_and_identity",
-      "label": ".test_documented_nested_devices_preserve_units_unknowns_and_identity()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": ".test_documented_nested_devices_preserve_units_unknowns_and_identity()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L402"
-    },
-    {
-      "id": "tests_test_pvs_compatibilitytests_test_flat_fields_take_precedence_over_nested_fields",
-      "label": ".test_flat_fields_take_precedence_over_nested_fields()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": ".test_flat_fields_take_precedence_over_nested_fields()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L418"
-    },
-    {
-      "id": "tests_test_pvs_compatibilitytests_test_gateway_diagnostics_are_allowlisted_and_safe",
-      "label": ".test_gateway_diagnostics_are_allowlisted_and_safe()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": ".test_gateway_diagnostics_are_allowlisted_and_safe()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L426"
-    },
-    {
-      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry",
-      "label": ".test_real_http_cookie_session_recovers_after_expiry()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": ".test_real_http_cookie_session_recovers_after_expiry()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L298"
-    },
-    {
-      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry_do_get",
-      "label": "do_GET()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": "do_get()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L303"
-    },
-    {
-      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry_local_opener",
-      "label": "local_opener()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": "local_opener()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L341"
-    },
-    {
-      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry_local_opener_open",
-      "label": "open()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": "open()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L345"
-    },
-    {
-      "id": "tests_test_pvs_compatibilitytests_test_real_http_cookie_session_recovers_after_expiry_log_message",
-      "label": "log_message()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "CompatibilityTests",
-      "file_type": "code",
-      "norm_label": "log_message()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L331"
-    },
-    {
       "id": "workers_ingest_test_weather_test_fakedb_batch",
       "label": ".batch()",
       "_callable": true,
@@ -8392,7 +8548,7 @@
       "file_type": "code",
       "norm_label": "cell()",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L106"
+      "source_location": "L111"
     },
     {
       "id": "site_introduction_expandcomparisonrow",
@@ -8489,138 +8645,6 @@
       "norm_label": "updatenavigation()",
       "source_file": "site/introduction.js",
       "source_location": "L16"
-    },
-    {
-      "id": "collector_main_build_parser",
-      "label": "build_parser()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "code",
-      "norm_label": "build_parser()",
-      "source_file": "collector/main.py",
-      "source_location": "L493"
-    },
-    {
-      "id": "collector_main_check_reads",
-      "label": "check_reads()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "code",
-      "norm_label": "check_reads()",
-      "source_file": "collector/main.py",
-      "source_location": "L408"
-    },
-    {
-      "id": "collector_main_connect_pvs",
-      "label": "connect_pvs()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "code",
-      "norm_label": "connect_pvs()",
-      "source_file": "collector/main.py",
-      "source_location": "L476"
-    },
-    {
-      "id": "collector_main_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "collector/main.py",
-      "source_location": "L505"
-    },
-    {
-      "id": "collector_main_main_stop_on_sigterm",
-      "label": "stop_on_sigterm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "code",
-      "norm_label": "stop_on_sigterm()",
-      "source_file": "collector/main.py",
-      "source_location": "L523"
-    },
-    {
-      "id": "collector_model_gateway_info",
-      "label": "gateway_info()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "code",
-      "norm_label": "gateway_info()",
-      "source_file": "collector/model.py",
-      "source_location": "L180"
-    },
-    {
-      "id": "tests_test_pvs_readchecktests_run_check",
-      "label": ".run_check()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "ReadCheckTests",
-      "file_type": "code",
-      "norm_label": ".run_check()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L434"
-    },
-    {
-      "id": "tests_test_pvs_readchecktests_test_metadata_failure_is_optional_but_missing_core_site_fields_fail",
-      "label": ".test_metadata_failure_is_optional_but_missing_core_site_fields_fail()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "ReadCheckTests",
-      "file_type": "code",
-      "norm_label": ".test_metadata_failure_is_optional_but_missing_core_site_fields_fail()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L460"
-    },
-    {
-      "id": "tests_test_pvs_readchecktests_test_stale_and_future_site_time_fail_but_measured_zero_passes",
-      "label": ".test_stale_and_future_site_time_fail_but_measured_zero_passes()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "ReadCheckTests",
-      "file_type": "code",
-      "norm_label": ".test_stale_and_future_site_time_fail_but_measured_zero_passes()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L469"
-    },
-    {
-      "id": "tests_test_pvs_readchecktests_test_synthetic_pvs5_shared_fields_use_the_existing_pipeline",
-      "label": ".test_synthetic_pvs5_shared_fields_use_the_existing_pipeline()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "ReadCheckTests",
-      "file_type": "code",
-      "norm_label": ".test_synthetic_pvs5_shared_fields_use_the_existing_pipeline()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L443"
-    },
-    {
-      "id": "tests_test_pvs_readchecktests_test_unknown_version_and_empty_groups_do_not_claim_absence_or_block_site",
-      "label": ".test_unknown_version_and_empty_groups_do_not_claim_absence_or_block_site()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "ReadCheckTests",
-      "file_type": "code",
-      "norm_label": ".test_unknown_version_and_empty_groups_do_not_claim_absence_or_block_site()",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L452"
     },
     {
       "id": "workers_ingest_test_weather_test_airqualitypayload",
@@ -9096,7 +9120,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
       "norm_label": ".setup()",
       "source_file": "tests/test_collector.py",
@@ -9108,7 +9132,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
       "norm_label": ".test_boot_relative_monotonic_clock_keeps_the_schedule()",
       "source_file": "tests/test_collector.py",
@@ -9120,7 +9144,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
       "norm_label": ".__init__()",
       "source_file": "tests/test_collector.py",
@@ -9132,7 +9156,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
       "norm_label": ".monotonic()",
       "source_file": "tests/test_collector.py",
@@ -9144,7 +9168,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
       "norm_label": ".now()",
       "source_file": "tests/test_collector.py",
@@ -9156,71 +9180,59 @@
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
       "norm_label": ".sleep()",
       "source_file": "tests/test_collector.py",
       "source_location": "L47"
     },
     {
-      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged",
-      "label": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged()",
+      "id": "tests_test_collector_fakeingest_init",
+      "label": ".__init__()",
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
-      "norm_label": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged()",
+      "norm_label": ".__init__()",
       "source_file": "tests/test_collector.py",
-      "source_location": "L721"
+      "source_location": "L128"
     },
     {
-      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged_do_post",
-      "label": "do_POST()",
+      "id": "tests_test_collector_fakeingest_post_records",
+      "label": ".post_records()",
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
-      "norm_label": "do_post()",
+      "norm_label": ".post_records()",
       "source_file": "tests/test_collector.py",
-      "source_location": "L739"
+      "source_location": "L143"
     },
     {
-      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged_do_put",
-      "label": "do_PUT()",
+      "id": "tests_test_collector_fakeingest_put_live",
+      "label": ".put_live()",
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
-      "norm_label": "do_put()",
+      "norm_label": ".put_live()",
       "source_file": "tests/test_collector.py",
-      "source_location": "L733"
+      "source_location": "L139"
     },
     {
-      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged_log_message",
-      "label": "log_message()",
+      "id": "tests_test_collector_fakeingest_raise",
+      "label": "._raise()",
       "_callable": true,
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "code",
-      "norm_label": "log_message()",
+      "norm_label": "._raise()",
       "source_file": "tests/test_collector.py",
-      "source_location": "L725"
-    },
-    {
-      "id": "tests_test_collector_ingestsmoketests_test_minute_history_reaches_the_endpoint_and_is_acknowledged_payload",
-      "label": "_payload()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
-      "file_type": "code",
-      "norm_label": "_payload()",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L728"
+      "source_location": "L135"
     },
     {
       "id": "web_weather_controls_initweathercontrols",
@@ -9390,6 +9402,17 @@
       "source_location": "L263"
     },
     {
+      "id": "collector_model_rationale_280",
+      "label": "One ``site_latest`` snapshot for the discardable live path.",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "model.py",
+      "file_type": "rationale",
+      "norm_label": "one ``site_latest`` snapshot for the discardable live path.",
+      "source_file": "collector/model.py",
+      "source_location": "L280"
+    },
+    {
       "id": "collector_model_rationale_293",
       "label": "Detect a reset even when an outage lets the new uptime overtake the old one.",
       "_origin": "ast",
@@ -9410,17 +9433,6 @@
       "norm_label": "return a finite float, or none for missing/blank/nan/inf/malformed input.",
       "source_file": "collector/model.py",
       "source_location": "L84"
-    },
-    {
-      "id": "collector_queue_rationale_83",
-      "label": "Insert records, ignoring ones already queued under the same ID.",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "model.py",
-      "file_type": "rationale",
-      "norm_label": "insert records, ignoring ones already queued under the same id.",
-      "source_file": "collector/queue.py",
-      "source_location": "L83"
     },
     {
       "id": "collector_rollup_rationale_47",
@@ -9544,16 +9556,26 @@
       "source_location": "L19"
     },
     {
-      "id": "docs_references_community_collector_references",
-      "label": "Community collector references",
+      "id": "collector_rollup_rationale_35",
+      "label": "Accumulates the site samples that belong to one UTC minute.",
       "_origin": "ast",
       "community": 12,
-      "community_name": "ParsingTests",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "community collector references",
-      "source_file": "docs/references.md",
-      "source_location": "L15"
+      "community_name": "SiteMinute",
+      "file_type": "rationale",
+      "norm_label": "accumulates the site samples that belong to one utc minute.",
+      "source_file": "collector/rollup.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "tests_test_collector_rationale_308",
+      "label": "A frozen measurement time is not a reading: one bootstrap row, then a gap.",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "SiteMinute",
+      "file_type": "rationale",
+      "norm_label": "a frozen measurement time is not a reading: one bootstrap row, then a gap.",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L308"
     },
     {
       "id": "workers_dashboard_src_notifications",
@@ -9721,17 +9743,6 @@
       "source_location": "L9"
     },
     {
-      "id": "tests_test_collector_rationale_308",
-      "label": "A frozen measurement time is not a reading: one bootstrap row, then a gap.",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "CollectorTestCase",
-      "file_type": "rationale",
-      "norm_label": "a frozen measurement time is not a reading: one bootstrap row, then a gap.",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L308"
-    },
-    {
       "id": "tests_test_collector_rationale_325",
       "label": "A PVS restart renumbers every index; identity has to come from the serial.",
       "_origin": "ast",
@@ -9820,11 +9831,78 @@
       "source_location": "L40"
     },
     {
+      "id": "argumentparser",
+      "label": "ArgumentParser",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "argumentparser",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "runtimeerror",
+      "label": "RuntimeError",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "code",
+      "norm_label": "runtimeerror",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "docs_adr_0001_pypvs_client_evaluation_context_and_requirements",
+      "label": "Context and requirements",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "context and requirements",
+      "source_file": "docs/adr/0001-pypvs-client-evaluation.md",
+      "source_location": "L123"
+    },
+    {
+      "id": "collector_main_rationale_409",
+      "label": "One read-only pass over every group; prints values, stores nothing.",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "rationale",
+      "norm_label": "one read-only pass over every group; prints values, stores nothing.",
+      "source_file": "collector/main.py",
+      "source_location": "L409"
+    },
+    {
+      "id": "collector_main_rationale_477",
+      "label": "Wait for the PVS instead of crash-looping when it is rebooting or down.",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "rationale",
+      "norm_label": "wait for the pvs instead of crash-looping when it is rebooting or down.",
+      "source_file": "collector/main.py",
+      "source_location": "L477"
+    },
+    {
+      "id": "collector_model_rationale_181",
+      "label": "Only recognized model names and numeric revisions may enter diagnostics.",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "PVSError",
+      "file_type": "rationale",
+      "norm_label": "only recognized model names and numeric revisions may enter diagnostics.",
+      "source_file": "collector/model.py",
+      "source_location": "L181"
+    },
+    {
       "id": "collector_pvs_rationale_118",
       "label": "Derive the in-memory session credential from a focused serial read.",
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "rationale",
       "norm_label": "derive the in-memory session credential from a focused serial read.",
       "source_file": "collector/pvs.py",
@@ -9835,7 +9913,7 @@
       "label": "Every read gets at most one session refresh, regardless of rejection format.",
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "rationale",
       "norm_label": "every read gets at most one session refresh, regardless of rejection format.",
       "source_file": "collector/pvs.py",
@@ -9846,7 +9924,7 @@
       "label": "Small uncached query used to spot PVS restarts and rising load.",
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "rationale",
       "norm_label": "small uncached query used to spot pvs restarts and rising load.",
       "source_file": "collector/pvs.py",
@@ -9857,29 +9935,29 @@
       "label": "Focused identity diagnostics; exclude SSID, MAC and other settings.",
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "rationale",
       "norm_label": "focused identity diagnostics; exclude ssid, mac and other settings.",
       "source_file": "collector/pvs.py",
       "source_location": "L173"
     },
     {
-      "id": "collector_pvs_rationale_41",
-      "label": "The PVS rejected the session with HTTP 401/403.",
+      "id": "collector_pvs_rationale_30",
+      "label": "A PVS read failed: transport, malformed response, or repeated auth failure.",
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "rationale",
-      "norm_label": "the pvs rejected the session with http 401/403.",
+      "norm_label": "a pvs read failed: transport, malformed response, or repeated auth failure.",
       "source_file": "collector/pvs.py",
-      "source_location": "L41"
+      "source_location": "L30"
     },
     {
       "id": "collector_pvs_rationale_49",
       "label": "One serialized read-only connection to a PVS varserver on the LAN.",
       "_origin": "ast",
       "community": 17,
-      "community_name": "PVSClient",
+      "community_name": "PVSError",
       "file_type": "rationale",
       "norm_label": "one serialized read-only connection to a pvs varserver on the lan.",
       "source_file": "collector/pvs.py",
@@ -10777,17 +10855,6 @@
       "source_location": "L1"
     },
     {
-      "id": "collector_upload",
-      "label": "upload.py",
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "test_pvs.py",
-      "file_type": "code",
-      "norm_label": "upload.py",
-      "source_file": "collector/upload.py",
-      "source_location": "L1"
-    },
-    {
       "id": "pilot",
       "label": "pilot.py",
       "_origin": "ast",
@@ -10821,15 +10888,15 @@
       "source_location": "L1"
     },
     {
-      "id": "collector_upload_rationale_1",
-      "label": "Ingest client: discardable latest-value PUTs and idempotent history batches.\u2026",
+      "id": "collector_pvs_rationale_41",
+      "label": "The PVS rejected the session with HTTP 401/403.",
       "_origin": "ast",
       "community": 20,
       "community_name": "test_pvs.py",
       "file_type": "rationale",
-      "norm_label": "ingest client: discardable latest-value puts and idempotent history batches....",
-      "source_file": "collector/upload.py",
-      "source_location": "L1"
+      "norm_label": "the pvs rejected the session with http 401/403.",
+      "source_file": "collector/pvs.py",
+      "source_location": "L41"
     },
     {
       "id": "pilot_rationale_2",
@@ -10854,15 +10921,26 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_test_pvs_rationale_192",
-      "label": "Clearing a jar the opener does not use leaves the stale cookie in place.",
+      "id": "collector_init",
+      "label": "__init__.py",
       "_origin": "ast",
-      "community": 20,
-      "community_name": "test_pvs.py",
-      "file_type": "rationale",
-      "norm_label": "clearing a jar the opener does not use leaves the stale cookie in place.",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L192"
+      "community": 21,
+      "community_name": "test_collector.py",
+      "file_type": "code",
+      "norm_label": "__init__.py",
+      "source_file": "collector/__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "collector_main",
+      "label": "main.py",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "test_collector.py",
+      "file_type": "code",
+      "norm_label": "main.py",
+      "source_file": "collector/main.py",
+      "source_location": "L1"
     },
     {
       "id": "collector_queue",
@@ -10917,6 +10995,28 @@
       "file_type": "code",
       "norm_label": "test_collector.py",
       "source_file": "tests/test_collector.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "collector_init_rationale_1",
+      "label": "Read-only SunPower PVS varserver collector: LAN polling, local queue, cloud\u2026",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "test_collector.py",
+      "file_type": "rationale",
+      "norm_label": "read-only sunpower pvs varserver collector: lan polling, local queue, cloud...",
+      "source_file": "collector/__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "collector_main_rationale_1",
+      "label": "Serialized PVS varserver collector: tiered reads, minute rollup, local queue,\u2026",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "test_collector.py",
+      "file_type": "rationale",
+      "norm_label": "serialized pvs varserver collector: tiered reads, minute rollup, local queue,...",
+      "source_file": "collector/main.py",
       "source_location": "L1"
     },
     {
@@ -10975,28 +11075,6 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_test_collector_rationale_719",
-      "label": "End to end over a real socket: collector -> HTTP -> queue drain.",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "test_collector.py",
-      "file_type": "rationale",
-      "norm_label": "end to end over a real socket: collector -> http -> queue drain.",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L719"
-    },
-    {
-      "id": "collector_init",
-      "label": "__init__.py",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "pypvs-evaluation.py",
-      "file_type": "code",
-      "norm_label": "__init__.py",
-      "source_file": "collector/__init__.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_checks_pypvs_evaluation",
       "label": "pypvs-evaluation.py",
       "_origin": "ast",
@@ -11005,17 +11083,6 @@
       "file_type": "code",
       "norm_label": "pypvs-evaluation.py",
       "source_file": "scripts/checks/pypvs-evaluation.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "collector_init_rationale_1",
-      "label": "Read-only SunPower PVS varserver collector: LAN polling, local queue, cloud\u2026",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "pypvs-evaluation.py",
-      "file_type": "rationale",
-      "norm_label": "read-only sunpower pvs varserver collector: lan polling, local queue, cloud...",
-      "source_file": "collector/__init__.py",
       "source_location": "L1"
     },
     {
@@ -11030,33 +11097,66 @@
       "source_location": "L1"
     },
     {
+      "id": "collector_upload",
+      "label": "upload.py",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "code",
+      "norm_label": "upload.py",
+      "source_file": "collector/upload.py",
+      "source_location": "L1"
+    },
+    {
       "id": "collector_upload_py_exception",
       "label": "Exception",
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "code",
       "norm_label": "exception",
       "source_file": "",
       "source_location": ""
     },
     {
+      "id": "collector_upload_rationale_1",
+      "label": "Ingest client: discardable latest-value PUTs and idempotent history batches.\u2026",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "rationale",
+      "norm_label": "ingest client: discardable latest-value puts and idempotent history batches....",
+      "source_file": "collector/upload.py",
+      "source_location": "L1"
+    },
+    {
       "id": "collector_upload_rationale_24",
       "label": "Base class for ingest failures.",
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "rationale",
       "norm_label": "base class for ingest failures.",
       "source_file": "collector/upload.py",
       "source_location": "L24"
     },
     {
+      "id": "collector_upload_rationale_28",
+      "label": "The upload token was rejected; stop sending until an operator acts.",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "rationale",
+      "norm_label": "the upload token was rejected; stop sending until an operator acts.",
+      "source_file": "collector/upload.py",
+      "source_location": "L28"
+    },
+    {
       "id": "collector_upload_rationale_32",
       "label": "Network trouble, timeout, 429, or 5xx: keep the records and retry later.",
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "rationale",
       "norm_label": "network trouble, timeout, 429, or 5xx: keep the records and retry later.",
       "source_file": "collector/upload.py",
@@ -11067,22 +11167,44 @@
       "label": "The batch was rejected; isolate these record IDs and keep the rest.",
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "rationale",
       "norm_label": "the batch was rejected; isolate these record ids and keep the rest.",
       "source_file": "collector/upload.py",
       "source_location": "L36"
     },
     {
+      "id": "collector_upload_rationale_44",
+      "label": "HTTPS client for one ingest origin. Certificates are validated normally.",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "rationale",
+      "norm_label": "https client for one ingest origin. certificates are validated normally.",
+      "source_file": "collector/upload.py",
+      "source_location": "L44"
+    },
+    {
       "id": "collector_upload_rationale_81",
       "label": "Return the accepted record IDs; the caller deletes exactly those.",
       "_origin": "ast",
       "community": 23,
-      "community_name": "RejectedError",
+      "community_name": "IngestClient",
       "file_type": "rationale",
       "norm_label": "return the accepted record ids; the caller deletes exactly those.",
       "source_file": "collector/upload.py",
       "source_location": "L81"
+    },
+    {
+      "id": "tests_test_collector_rationale_719",
+      "label": "End to end over a real socket: collector -> HTTP -> queue drain.",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "IngestClient",
+      "file_type": "rationale",
+      "norm_label": "end to end over a real socket: collector -> http -> queue drain.",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L719"
     },
     {
       "id": "scripts_checks_local_cloud_check",
@@ -11193,6 +11315,17 @@
       "norm_label": "state",
       "source_file": "scripts/checks/local-cloud-check.mjs",
       "source_location": "L23"
+    },
+    {
+      "id": "scripts_install_cloudflare_account",
+      "label": "cloudflare-account.mjs",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "local-cloud-check.mjs",
+      "file_type": "code",
+      "norm_label": "cloudflare-account.mjs",
+      "source_file": "scripts/install/cloudflare-account.mjs",
+      "source_location": "L1"
     },
     {
       "id": "web_settings",
@@ -11561,7 +11694,7 @@
       "file_type": "code",
       "norm_label": "aligned",
       "source_file": "web/check.js",
-      "source_location": "L238"
+      "source_location": "L241"
     },
     {
       "id": "web_check_alignedrows",
@@ -11572,7 +11705,7 @@
       "file_type": "code",
       "norm_label": "alignedrows",
       "source_file": "web/check.js",
-      "source_location": "L220"
+      "source_location": "L223"
     },
     {
       "id": "web_check_buckets",
@@ -11583,7 +11716,7 @@
       "file_type": "code",
       "norm_label": "buckets",
       "source_file": "web/check.js",
-      "source_location": "L199"
+      "source_location": "L202"
     },
     {
       "id": "web_check_bucketwindows",
@@ -11594,7 +11727,7 @@
       "file_type": "code",
       "norm_label": "bucketwindows",
       "source_file": "web/check.js",
-      "source_location": "L195"
+      "source_location": "L198"
     },
     {
       "id": "web_check_calibratedenergy",
@@ -11605,7 +11738,7 @@
       "file_type": "code",
       "norm_label": "calibratedenergy",
       "source_file": "web/check.js",
-      "source_location": "L285"
+      "source_location": "L288"
     },
     {
       "id": "web_check_combined",
@@ -11616,7 +11749,7 @@
       "file_type": "code",
       "norm_label": "combined",
       "source_file": "web/check.js",
-      "source_location": "L227"
+      "source_location": "L230"
     },
     {
       "id": "web_check_correctedhistory",
@@ -11627,7 +11760,7 @@
       "file_type": "code",
       "norm_label": "correctedhistory",
       "source_file": "web/check.js",
-      "source_location": "L276"
+      "source_location": "L279"
     },
     {
       "id": "web_check_correctedlive",
@@ -11638,7 +11771,7 @@
       "file_type": "code",
       "norm_label": "correctedlive",
       "source_file": "web/check.js",
-      "source_location": "L269"
+      "source_location": "L272"
     },
     {
       "id": "web_check_counterwindows",
@@ -11649,7 +11782,7 @@
       "file_type": "code",
       "norm_label": "counterwindows",
       "source_file": "web/check.js",
-      "source_location": "L182"
+      "source_location": "L185"
     },
     {
       "id": "web_check_day",
@@ -11660,7 +11793,7 @@
       "file_type": "code",
       "norm_label": "day",
       "source_file": "web/check.js",
-      "source_location": "L69"
+      "source_location": "L72"
     },
     {
       "id": "web_check_daybuckets",
@@ -11671,7 +11804,7 @@
       "file_type": "code",
       "norm_label": "daybuckets",
       "source_file": "web/check.js",
-      "source_location": "L208"
+      "source_location": "L211"
     },
     {
       "id": "web_check_daylight_now",
@@ -11682,7 +11815,7 @@
       "file_type": "code",
       "norm_label": "daylight_now",
       "source_file": "web/check.js",
-      "source_location": "L70"
+      "source_location": "L73"
     },
     {
       "id": "web_check_daysolar",
@@ -11693,7 +11826,7 @@
       "file_type": "code",
       "norm_label": "daysolar",
       "source_file": "web/check.js",
-      "source_location": "L299"
+      "source_location": "L302"
     },
     {
       "id": "web_check_daytimesolar",
@@ -11704,7 +11837,7 @@
       "file_type": "code",
       "norm_label": "daytimesolar",
       "source_file": "web/check.js",
-      "source_location": "L263"
+      "source_location": "L266"
     },
     {
       "id": "web_check_energy",
@@ -11715,7 +11848,7 @@
       "file_type": "code",
       "norm_label": "energy",
       "source_file": "web/check.js",
-      "source_location": "L166"
+      "source_location": "L169"
     },
     {
       "id": "web_check_energywindows",
@@ -11726,7 +11859,7 @@
       "file_type": "code",
       "norm_label": "energywindows",
       "source_file": "web/check.js",
-      "source_location": "L161"
+      "source_location": "L164"
     },
     {
       "id": "web_check_failures",
@@ -11759,7 +11892,7 @@
       "file_type": "code",
       "norm_label": "forecast",
       "source_file": "web/check.js",
-      "source_location": "L248"
+      "source_location": "L251"
     },
     {
       "id": "web_check_from",
@@ -11770,7 +11903,7 @@
       "file_type": "code",
       "norm_label": "from",
       "source_file": "web/check.js",
-      "source_location": "L224"
+      "source_location": "L227"
     },
     {
       "id": "web_check_here",
@@ -11792,7 +11925,7 @@
       "file_type": "code",
       "norm_label": "hour",
       "source_file": "web/check.js",
-      "source_location": "L141"
+      "source_location": "L144"
     },
     {
       "id": "web_check_longsolar",
@@ -11803,7 +11936,7 @@
       "file_type": "code",
       "norm_label": "longsolar",
       "source_file": "web/check.js",
-      "source_location": "L301"
+      "source_location": "L304"
     },
     {
       "id": "web_check_nodaylight",
@@ -11814,7 +11947,7 @@
       "file_type": "code",
       "norm_label": "nodaylight",
       "source_file": "web/check.js",
-      "source_location": "L120"
+      "source_location": "L123"
     },
     {
       "id": "web_check_onlyload",
@@ -11825,7 +11958,7 @@
       "file_type": "code",
       "norm_label": "onlyload",
       "source_file": "web/check.js",
-      "source_location": "L176"
+      "source_location": "L179"
     },
     {
       "id": "web_check_pages",
@@ -11847,7 +11980,7 @@
       "file_type": "code",
       "norm_label": "partial",
       "source_file": "web/check.js",
-      "source_location": "L150"
+      "source_location": "L153"
     },
     {
       "id": "web_check_partialstats",
@@ -11858,7 +11991,7 @@
       "file_type": "code",
       "norm_label": "partialstats",
       "source_file": "web/check.js",
-      "source_location": "L151"
+      "source_location": "L154"
     },
     {
       "id": "web_check_quietsolar",
@@ -11869,7 +12002,7 @@
       "file_type": "code",
       "norm_label": "quietsolar",
       "source_file": "web/check.js",
-      "source_location": "L261"
+      "source_location": "L264"
     },
     {
       "id": "web_check_rawlive",
@@ -11880,7 +12013,7 @@
       "file_type": "code",
       "norm_label": "rawlive",
       "source_file": "web/check.js",
-      "source_location": "L267"
+      "source_location": "L270"
     },
     {
       "id": "web_check_rules",
@@ -11891,7 +12024,7 @@
       "file_type": "code",
       "norm_label": "rules",
       "source_file": "web/check.js",
-      "source_location": "L86"
+      "source_location": "L89"
     },
     {
       "id": "web_check_solarminutes",
@@ -11902,7 +12035,7 @@
       "file_type": "code",
       "norm_label": "solarminutes",
       "source_file": "web/check.js",
-      "source_location": "L294"
+      "source_location": "L297"
     },
     {
       "id": "web_check_sparse",
@@ -11913,7 +12046,7 @@
       "file_type": "code",
       "norm_label": "sparse",
       "source_file": "web/check.js",
-      "source_location": "L225"
+      "source_location": "L228"
     },
     {
       "id": "web_check_staleexport",
@@ -11924,7 +12057,7 @@
       "file_type": "code",
       "norm_label": "staleexport",
       "source_file": "web/check.js",
-      "source_location": "L157"
+      "source_location": "L160"
     },
     {
       "id": "web_check_stats",
@@ -11935,7 +12068,7 @@
       "file_type": "code",
       "norm_label": "stats",
       "source_file": "web/check.js",
-      "source_location": "L143"
+      "source_location": "L146"
     },
     {
       "id": "web_check_stats_now",
@@ -11946,7 +12079,7 @@
       "file_type": "code",
       "norm_label": "stats_now",
       "source_file": "web/check.js",
-      "source_location": "L136"
+      "source_location": "L139"
     },
     {
       "id": "web_check_stylesheet",
@@ -11968,7 +12101,7 @@
       "file_type": "code",
       "norm_label": "waiting",
       "source_file": "web/check.js",
-      "source_location": "L107"
+      "source_location": "L110"
     },
     {
       "id": "web_check_week",
@@ -11979,7 +12112,7 @@
       "file_type": "code",
       "norm_label": "week",
       "source_file": "web/check.js",
-      "source_location": "L240"
+      "source_location": "L243"
     },
     {
       "id": "web_check_weekoption",
@@ -11990,7 +12123,7 @@
       "file_type": "code",
       "norm_label": "weekoption",
       "source_file": "web/check.js",
-      "source_location": "L241"
+      "source_location": "L244"
     },
     {
       "id": "web_insights",
@@ -12317,6 +12450,29 @@
       "source_location": "L8"
     },
     {
+      "id": "docs_references_community_collector_references",
+      "label": "Community collector references",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "community collector references",
+      "source_file": "docs/references.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "tests_test_pvs_rationale_120",
+      "label": "Virtual monotonic clock so adapter tests never sleep in real time.",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "rationale",
+      "norm_label": "virtual monotonic clock so adapter tests never sleep in real time.",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L120"
+    },
+    {
       "id": "tests_test_pvs_rationale_156",
       "label": "A cache-only read can serve a partial variable set, so it is never used.",
       "_origin": "ast",
@@ -12337,6 +12493,28 @@
       "norm_label": "a stale cookie gets 401 on every request, so re-login must drop it.",
       "source_file": "tests/test_pvs.py",
       "source_location": "L165"
+    },
+    {
+      "id": "tests_test_pvs_rationale_192",
+      "label": "Clearing a jar the opener does not use leaves the stale cookie in place.",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "rationale",
+      "norm_label": "clearing a jar the opener does not use leaves the stale cookie in place.",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L192"
+    },
+    {
+      "id": "tests_test_pvs_rationale_74",
+      "label": "Minimal stand-in for urllib's opener; records every requested path.",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "make_client",
+      "file_type": "rationale",
+      "norm_label": "minimal stand-in for urllib's opener; records every requested path.",
+      "source_file": "tests/test_pvs.py",
+      "source_location": "L74"
     },
     {
       "id": "tests_test_collector_rationale_362",
@@ -12996,28 +13174,6 @@
       "source_location": "L1"
     },
     {
-      "id": "runtimeerror",
-      "label": "RuntimeError",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "code",
-      "norm_label": "runtimeerror",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "collector_pvs_rationale_30",
-      "label": "A PVS read failed: transport, malformed response, or repeated auth failure.",
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "PVSError",
-      "file_type": "rationale",
-      "norm_label": "a pvs read failed: transport, malformed response, or repeated auth failure.",
-      "source_file": "collector/pvs.py",
-      "source_location": "L30"
-    },
-    {
       "id": "scripts_install_github_user",
       "label": "github-user.mjs",
       "_origin": "ast",
@@ -13198,18 +13354,6 @@
       "norm_label": "components and boundaries",
       "source_file": "docs/architecture.md",
       "source_location": "L13"
-    },
-    {
-      "id": "docs_architecture_data_contract_and_history",
-      "label": "Data contract and history",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "Architecture",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "data contract and history",
-      "source_file": "docs/architecture.md",
-      "source_location": "L66"
     },
     {
       "id": "docs_architecture_decisions",
@@ -13820,7 +13964,7 @@
       "node_kind": "heading",
       "norm_label": "local configuration and persistent data",
       "source_file": "docs/project-layout.md",
-      "source_location": "L57"
+      "source_location": "L65"
     },
     {
       "id": "docs_project_layout_project_layout",
@@ -13847,33 +13991,11 @@
       "source_location": "L38"
     },
     {
-      "id": "collector_main",
-      "label": "main.py",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "main.py",
-      "source_file": "collector/main.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "collector_main_py_datetime",
-      "label": "datetime",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "datetime",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "collector_rollup",
       "label": "rollup.py",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "rollup.py",
       "source_file": "collector/rollup.py",
@@ -13884,7 +14006,7 @@
       "label": "datetime",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "datetime",
       "source_file": "",
@@ -13895,7 +14017,7 @@
       "label": "skipUnless",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "skipunless",
       "source_file": "",
@@ -13906,51 +14028,52 @@
       "label": "test_ingest_local.py",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "code",
       "norm_label": "test_ingest_local.py",
       "source_file": "tests/test_ingest_local.py",
       "source_location": "L1"
     },
     {
-      "id": "collector_main_rationale_1",
-      "label": "Serialized PVS varserver collector: tiered reads, minute rollup, local queue,\u2026",
+      "id": "docs_architecture_data_contract_and_history",
+      "label": "Data contract and history",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
-      "file_type": "rationale",
-      "norm_label": "serialized pvs varserver collector: tiered reads, minute rollup, local queue,...",
-      "source_file": "collector/main.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "collector_model_rationale_280",
-      "label": "One ``site_latest`` snapshot for the discardable live path.",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "rationale",
-      "norm_label": "one ``site_latest`` snapshot for the discardable live path.",
-      "source_file": "collector/model.py",
-      "source_location": "L280"
+      "community_name": "test_ingest_local.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "data contract and history",
+      "source_file": "docs/architecture.md",
+      "source_location": "L66"
     },
     {
       "id": "collector_model_rationale_79",
       "label": "Deterministic record ID; replay keeps the same ID and content.",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "rationale",
       "norm_label": "deterministic record id; replay keeps the same id and content.",
       "source_file": "collector/model.py",
       "source_location": "L79"
     },
     {
+      "id": "collector_queue_rationale_83",
+      "label": "Insert records, ignoring ones already queued under the same ID.",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "test_ingest_local.py",
+      "file_type": "rationale",
+      "norm_label": "insert records, ignoring ones already queued under the same id.",
+      "source_file": "collector/queue.py",
+      "source_location": "L83"
+    },
+    {
       "id": "collector_rollup_rationale_1",
       "label": "Minute and five-minute rollups with explicit coverage and quality. Rules from\u2026",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "rationale",
       "norm_label": "minute and five-minute rollups with explicit coverage and quality. rules from...",
       "source_file": "collector/rollup.py",
@@ -13961,51 +14084,18 @@
       "label": "One panel's state for a five-minute slot.",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "rationale",
       "norm_label": "one panel's state for a five-minute slot.",
       "source_file": "collector/rollup.py",
       "source_location": "L116"
     },
     {
-      "id": "collector_rollup_rationale_35",
-      "label": "Accumulates the site samples that belong to one UTC minute.",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "rationale",
-      "norm_label": "accumulates the site samples that belong to one utc minute.",
-      "source_file": "collector/rollup.py",
-      "source_location": "L35"
-    },
-    {
-      "id": "collector_upload_rationale_28",
-      "label": "The upload token was rejected; stop sending until an operator acts.",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "rationale",
-      "norm_label": "the upload token was rejected; stop sending until an operator acts.",
-      "source_file": "collector/upload.py",
-      "source_location": "L28"
-    },
-    {
-      "id": "collector_upload_rationale_44",
-      "label": "HTTPS client for one ingest origin. Certificates are validated normally.",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "main.py",
-      "file_type": "rationale",
-      "norm_label": "https client for one ingest origin. certificates are validated normally.",
-      "source_file": "collector/upload.py",
-      "source_location": "L44"
-    },
-    {
       "id": "tests_test_ingest_local_rationale_1",
       "label": "Opt-in end-to-end check against a locally running ingest Worker. npx wrangler\u2026",
       "_origin": "ast",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "file_type": "rationale",
       "norm_label": "opt-in end-to-end check against a locally running ingest worker. npx wrangler...",
       "source_file": "tests/test_ingest_local.py",
@@ -14237,17 +14327,6 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_install_cloudflare_account",
-      "label": "cloudflare-account.mjs",
-      "_origin": "ast",
-      "community": 52,
-      "community_name": "ref_node_child_process",
-      "file_type": "code",
-      "norm_label": "cloudflare-account.mjs",
-      "source_file": "scripts/install/cloudflare-account.mjs",
-      "source_location": "L1"
-    },
-    {
       "id": "workers_dashboard_src_live",
       "label": "live.ts",
       "_origin": "ast",
@@ -14281,37 +14360,15 @@
       "source_location": "L3"
     },
     {
-      "id": "tests_test_collector_rationale_126",
-      "label": "Records every upload and can be told to fail like a real WAN.",
+      "id": "collector_main_py_datetime",
+      "label": "datetime",
       "_origin": "ast",
-      "community": 54,
-      "community_name": "FakeIngest",
-      "file_type": "rationale",
-      "norm_label": "records every upload and can be told to fail like a real wan.",
-      "source_file": "tests/test_collector.py",
-      "source_location": "L126"
-    },
-    {
-      "id": "tests_test_pvs_rationale_120",
-      "label": "Virtual monotonic clock so adapter tests never sleep in real time.",
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "rationale",
-      "norm_label": "virtual monotonic clock so adapter tests never sleep in real time.",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L120"
-    },
-    {
-      "id": "tests_test_pvs_rationale_74",
-      "label": "Minimal stand-in for urllib's opener; records every requested path.",
-      "_origin": "ast",
-      "community": 55,
-      "community_name": "Clock",
-      "file_type": "rationale",
-      "norm_label": "minimal stand-in for urllib's opener; records every requested path.",
-      "source_file": "tests/test_pvs.py",
-      "source_location": "L74"
+      "community": 56,
+      "community_name": "Collector",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "collector_main_py_exception",
@@ -14484,7 +14541,18 @@
       "file_type": "code",
       "norm_label": "bodyclasses",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L54"
+      "source_location": "L59"
+    },
+    {
+      "id": "scripts_checks_introduction_check_brandsvg",
+      "label": "brandSvg",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "introduction-check.mjs",
+      "file_type": "code",
+      "norm_label": "brandsvg",
+      "source_file": "scripts/checks/introduction-check.mjs",
+      "source_location": "L12"
     },
     {
       "id": "scripts_checks_introduction_check_buttons",
@@ -14495,7 +14563,7 @@
       "file_type": "code",
       "norm_label": "buttons",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L40"
+      "source_location": "L45"
     },
     {
       "id": "scripts_checks_introduction_check_caption",
@@ -14506,7 +14574,7 @@
       "file_type": "code",
       "norm_label": "caption",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L45"
+      "source_location": "L50"
     },
     {
       "id": "scripts_checks_introduction_check_context",
@@ -14517,7 +14585,7 @@
       "file_type": "code",
       "norm_label": "context",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L76"
+      "source_location": "L81"
     },
     {
       "id": "scripts_checks_introduction_check_document",
@@ -14528,7 +14596,7 @@
       "file_type": "code",
       "norm_label": "document",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L59"
+      "source_location": "L64"
     },
     {
       "id": "scripts_checks_introduction_check_external",
@@ -14539,7 +14607,7 @@
       "file_type": "code",
       "norm_label": "external",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L52"
+      "source_location": "L57"
     },
     {
       "id": "scripts_checks_introduction_check_guide",
@@ -14561,7 +14629,7 @@
       "file_type": "code",
       "norm_label": "header",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L43"
+      "source_location": "L48"
     },
     {
       "id": "scripts_checks_introduction_check_image",
@@ -14572,7 +14640,7 @@
       "file_type": "code",
       "norm_label": "image",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L45"
+      "source_location": "L50"
     },
     {
       "id": "scripts_checks_introduction_check_internal",
@@ -14583,7 +14651,7 @@
       "file_type": "code",
       "norm_label": "internal",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L51"
+      "source_location": "L56"
     },
     {
       "id": "scripts_checks_introduction_check_media",
@@ -14594,7 +14662,7 @@
       "file_type": "code",
       "norm_label": "media",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L44"
+      "source_location": "L49"
     },
     {
       "id": "scripts_checks_introduction_check_names",
@@ -14616,7 +14684,7 @@
       "file_type": "code",
       "norm_label": "nav",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L42"
+      "source_location": "L47"
     },
     {
       "id": "scripts_checks_introduction_check_option",
@@ -14627,7 +14695,7 @@
       "file_type": "code",
       "norm_label": "option",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L53"
+      "source_location": "L58"
     },
     {
       "id": "scripts_checks_introduction_check_original",
@@ -14638,7 +14706,7 @@
       "file_type": "code",
       "norm_label": "original",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L45"
+      "source_location": "L50"
     },
     {
       "id": "scripts_checks_introduction_check_pages",
@@ -14660,7 +14728,7 @@
       "file_type": "code",
       "norm_label": "rows",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L37"
+      "source_location": "L42"
     },
     {
       "id": "scripts_checks_introduction_check_screenshot",
@@ -14671,7 +14739,7 @@
       "file_type": "code",
       "norm_label": "screenshot",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L50"
+      "source_location": "L55"
     },
     {
       "id": "scripts_checks_introduction_check_sections",
@@ -14682,7 +14750,7 @@
       "file_type": "code",
       "norm_label": "sections",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L41"
+      "source_location": "L46"
     },
     {
       "id": "scripts_checks_introduction_check_server",
@@ -14693,7 +14761,7 @@
       "file_type": "code",
       "norm_label": "server",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L129"
+      "source_location": "L134"
     },
     {
       "id": "scripts_checks_introduction_check_setupsections",
@@ -14704,7 +14772,7 @@
       "file_type": "code",
       "norm_label": "setupsections",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L24"
+      "source_location": "L29"
     },
     {
       "id": "scripts_checks_introduction_check_viewer",
@@ -14715,7 +14783,7 @@
       "file_type": "code",
       "norm_label": "viewer",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L46"
+      "source_location": "L51"
     },
     {
       "id": "scripts_checks_introduction_check_window",
@@ -14726,7 +14794,7 @@
       "file_type": "code",
       "norm_label": "window",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L69"
+      "source_location": "L74"
     },
     {
       "id": "docs_plans_2026_10_09_collector_recovery",
@@ -15257,62 +15325,6 @@
       "source_location": "L63"
     },
     {
-      "id": "argumentparser",
-      "label": "ArgumentParser",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "code",
-      "norm_label": "argumentparser",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "docs_adr_0001_pypvs_client_evaluation_context_and_requirements",
-      "label": "Context and requirements",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "context and requirements",
-      "source_file": "docs/adr/0001-pypvs-client-evaluation.md",
-      "source_location": "L123"
-    },
-    {
-      "id": "collector_main_rationale_409",
-      "label": "One read-only pass over every group; prints values, stores nothing.",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "rationale",
-      "norm_label": "one read-only pass over every group; prints values, stores nothing.",
-      "source_file": "collector/main.py",
-      "source_location": "L409"
-    },
-    {
-      "id": "collector_main_rationale_477",
-      "label": "Wait for the PVS instead of crash-looping when it is rebooting or down.",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "rationale",
-      "norm_label": "wait for the pvs instead of crash-looping when it is rebooting or down.",
-      "source_file": "collector/main.py",
-      "source_location": "L477"
-    },
-    {
-      "id": "collector_model_rationale_181",
-      "label": "Only recognized model names and numeric revisions may enter diagnostics.",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "check_reads",
-      "file_type": "rationale",
-      "norm_label": "only recognized model names and numeric revisions may enter diagnostics.",
-      "source_file": "collector/model.py",
-      "source_location": "L181"
-    },
-    {
       "id": "docs_references_additional_ui_references",
       "label": "Additional UI references",
       "_origin": "ast",
@@ -15785,11 +15797,22 @@
       "source_location": "L53"
     },
     {
+      "id": "tests_test_collector_rationale_126",
+      "label": "Records every upload and can be told to fail like a real WAN.",
+      "_origin": "ast",
+      "community": 91,
+      "community_name": "Env",
+      "file_type": "rationale",
+      "norm_label": "records every upload and can be told to fail like a real wan.",
+      "source_file": "tests/test_collector.py",
+      "source_location": "L126"
+    },
+    {
       "id": "tests_test_collector_rationale_34",
       "label": "Virtual wall clock plus monotonic clock advanced by the collector's sleeps.",
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "rationale",
       "norm_label": "virtual wall clock plus monotonic clock advanced by the collector's sleeps.",
       "source_file": "tests/test_collector.py",
@@ -15800,7 +15823,7 @@
       "label": "The Pi's monotonic clock starts at boot, so due times need the offset.",
       "_origin": "ast",
       "community": 91,
-      "community_name": ".test_minute_history_reaches_the_endpoint_and_is_acknowledged",
+      "community_name": "Env",
       "file_type": "rationale",
       "norm_label": "the pi's monotonic clock starts at boot, so due times need the offset.",
       "source_file": "tests/test_collector.py",
@@ -15888,18 +15911,6 @@
       "type": "external"
     },
     {
-      "id": "datetime",
-      "label": "datetime",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "test_pvs.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "datetime",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "errno",
       "label": "errno",
       "_origin": "semantic",
@@ -15972,18 +15983,6 @@
       "type": "external"
     },
     {
-      "id": "time",
-      "label": "time",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "test_pvs.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "time",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "unittest_mock",
       "label": "unittest_mock",
       "_origin": "semantic",
@@ -15992,42 +15991,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "unittest_mock",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "urllib_error",
-      "label": "urllib_error",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "test_pvs.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "urllib_error",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "urllib_parse",
-      "label": "urllib_parse",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "test_pvs.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "urllib_parse",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "urllib_request",
-      "label": "urllib_request",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "test_pvs.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "urllib_request",
       "source_file": "",
       "type": "external"
     },
@@ -16140,6 +16103,18 @@
       "type": "external"
     },
     {
+      "id": "signal",
+      "label": "signal",
+      "_origin": "semantic",
+      "community": 21,
+      "community_name": "test_collector.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "signal",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "sqlite3",
       "label": "sqlite3",
       "_origin": "semantic",
@@ -16196,6 +16171,18 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "tempfile",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "time",
+      "label": "time",
+      "_origin": "semantic",
+      "community": 21,
+      "community_name": "test_collector.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "time",
       "source_file": "",
       "type": "external"
     },
@@ -16332,6 +16319,54 @@
       "type": "external"
     },
     {
+      "id": "urllib_parse",
+      "label": "urllib_parse",
+      "_origin": "semantic",
+      "community": 22,
+      "community_name": "pypvs-evaluation.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "urllib_parse",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "urllib_error",
+      "label": "urllib_error",
+      "_origin": "semantic",
+      "community": 23,
+      "community_name": "IngestClient",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "urllib_error",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "urllib_request",
+      "label": "urllib_request",
+      "_origin": "semantic",
+      "community": 23,
+      "community_name": "IngestClient",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "urllib_request",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ref_node_child_process",
+      "label": "ref_node_child_process",
+      "_origin": "semantic",
+      "community": 24,
+      "community_name": "local-cloud-check.mjs",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_node_child_process",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "ref_workers_dist_dashboard_src_session_js",
       "label": "ref_workers_dist_dashboard_src_session_js",
       "_origin": "semantic",
@@ -16428,14 +16463,14 @@
       "type": "external"
     },
     {
-      "id": "signal",
-      "label": "signal",
+      "id": "datetime",
+      "label": "datetime",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "signal",
+      "norm_label": "datetime",
       "source_file": "",
       "type": "external"
     },
@@ -16444,7 +16479,7 @@
       "label": "unittest",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "main.py",
+      "community_name": "test_ingest_local.py",
       "external": true,
       "file_type": "concept",
       "norm_label": "unittest",
@@ -16460,18 +16495,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "ref_node_vm",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "ref_node_child_process",
-      "label": "ref_node_child_process",
-      "_origin": "semantic",
-      "community": 52,
-      "community_name": "ref_node_child_process",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "ref_node_child_process",
       "source_file": "",
       "type": "external"
     },
@@ -22450,7 +22473,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/check.js",
-      "source_location": "L73",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -37729,7 +37752,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/project-layout.md",
-      "source_location": "L57",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -38719,7 +38742,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L103",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_checks_introduction_check",
+      "target": "scripts_checks_introduction_check_assetsource",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/checks/introduction-check.mjs",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -38730,7 +38764,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L106",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_checks_introduction_check",
+      "target": "scripts_checks_introduction_check_brandsvg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/checks/introduction-check.mjs",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -38741,7 +38786,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L129",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -38752,7 +38797,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L24",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -38763,7 +38808,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L37",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -38774,7 +38819,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L40",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -38785,7 +38830,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L41",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -38796,7 +38841,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L42",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -38807,7 +38852,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L43",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -38818,7 +38863,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L44",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -38829,7 +38874,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L45",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -38840,7 +38885,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L45",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -38851,7 +38896,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L45",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -38862,7 +38907,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L46",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -38873,7 +38918,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L47",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -38884,7 +38929,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L50",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -38895,7 +38940,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L51",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -38906,7 +38951,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L52",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -38917,7 +38962,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L53",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -38928,7 +38973,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L54",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -38939,18 +38984,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L59",
-      "weight": 1.0
-    },
-    {
-      "source": "scripts_checks_introduction_check",
-      "target": "scripts_checks_introduction_check_window",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L69",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -38966,13 +39000,13 @@
     },
     {
       "source": "scripts_checks_introduction_check",
-      "target": "scripts_checks_introduction_check_context",
+      "target": "scripts_checks_introduction_check_window",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L76",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
@@ -38984,6 +39018,17 @@
       "confidence_score": 1.0,
       "source_file": "scripts/checks/introduction-check.mjs",
       "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_checks_introduction_check",
+      "target": "scripts_checks_introduction_check_context",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/checks/introduction-check.mjs",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -39808,7 +39853,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L41",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -39819,7 +39864,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L41",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -39830,7 +39875,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L42",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -39841,7 +39886,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L45",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -39852,7 +39897,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/checks/site-check.mjs",
-      "source_location": "L45",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -41205,7 +41250,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L107",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
@@ -41216,7 +41261,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L120",
+      "source_location": "L123",
       "weight": 1.0
     },
     {
@@ -41238,18 +41283,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L136",
-      "weight": 1.0
-    },
-    {
-      "source": "web_check",
-      "target": "web_check_minutewindow",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "web/check.js",
-      "source_location": "L137",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -41265,13 +41299,24 @@
     },
     {
       "source": "web_check",
+      "target": "web_check_minutewindow",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/check.js",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "web_check",
       "target": "web_check_hour",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L141",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -41282,7 +41327,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L143",
+      "source_location": "L146",
       "weight": 1.0
     },
     {
@@ -41293,7 +41338,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L150",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -41304,7 +41349,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L151",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -41315,7 +41360,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L157",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
@@ -41326,7 +41371,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L161",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -41337,7 +41382,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L166",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -41359,7 +41404,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L176",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -41370,7 +41415,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L182",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
@@ -41381,7 +41426,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L195",
+      "source_location": "L198",
       "weight": 1.0
     },
     {
@@ -41392,7 +41437,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L199",
+      "source_location": "L202",
       "weight": 1.0
     },
     {
@@ -41403,7 +41448,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L208",
+      "source_location": "L211",
       "weight": 1.0
     },
     {
@@ -41414,7 +41459,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L220",
+      "source_location": "L223",
       "weight": 1.0
     },
     {
@@ -41425,7 +41470,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L224",
+      "source_location": "L227",
       "weight": 1.0
     },
     {
@@ -41436,18 +41481,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L225",
-      "weight": 1.0
-    },
-    {
-      "source": "web_check",
-      "target": "web_check_combined",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "web/check.js",
-      "source_location": "L227",
+      "source_location": "L228",
       "weight": 1.0
     },
     {
@@ -41463,29 +41497,18 @@
     },
     {
       "source": "web_check",
+      "target": "web_check_combined",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/check.js",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
+      "source": "web_check",
       "target": "web_check_aligned",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "web/check.js",
-      "source_location": "L238",
-      "weight": 1.0
-    },
-    {
-      "source": "web_check",
-      "target": "web_check_week",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "web/check.js",
-      "source_location": "L240",
-      "weight": 1.0
-    },
-    {
-      "source": "web_check",
-      "target": "web_check_weekoption",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -41496,13 +41519,35 @@
     },
     {
       "source": "web_check",
+      "target": "web_check_week",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/check.js",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "web_check",
+      "target": "web_check_weekoption",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/check.js",
+      "source_location": "L244",
+      "weight": 1.0
+    },
+    {
+      "source": "web_check",
       "target": "web_check_forecast",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L248",
+      "source_location": "L251",
       "weight": 1.0
     },
     {
@@ -41513,7 +41558,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L261",
+      "source_location": "L264",
       "weight": 1.0
     },
     {
@@ -41524,7 +41569,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L263",
+      "source_location": "L266",
       "weight": 1.0
     },
     {
@@ -41535,7 +41580,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L267",
+      "source_location": "L270",
       "weight": 1.0
     },
     {
@@ -41546,7 +41591,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L269",
+      "source_location": "L272",
       "weight": 1.0
     },
     {
@@ -41557,7 +41602,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L276",
+      "source_location": "L279",
       "weight": 1.0
     },
     {
@@ -41568,7 +41613,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L285",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
@@ -41579,7 +41624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L294",
+      "source_location": "L297",
       "weight": 1.0
     },
     {
@@ -41590,7 +41635,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L299",
+      "source_location": "L302",
       "weight": 1.0
     },
     {
@@ -41601,7 +41646,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L301",
+      "source_location": "L304",
       "weight": 1.0
     },
     {
@@ -41623,7 +41668,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L69",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -41634,7 +41679,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L70",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -41645,7 +41690,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L72",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
@@ -41656,7 +41701,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/check.js",
-      "source_location": "L86",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -49636,7 +49681,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "scripts/checks/introduction-check.mjs",
-      "source_location": "L12",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -49888,7 +49933,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "web/check.js",
-      "source_location": "L64",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
