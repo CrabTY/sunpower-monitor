@@ -6,6 +6,9 @@ Thanks for helping improve SunPower Monitor. The collector only reads PVS varser
 
 Fork the repository to your GitHub account if you want to submit changes, then clone your fork. Installation uses the published Release installer on the collector host; see the [Quick Start](docs/quick-start.md).
 
+Node type definitions stay on 22.x to match CI. Dependabot keeps minor and patch
+updates enabled; update the types and supported runtime together for a major upgrade.
+
 Use Python 3.11+ and Node.js 22.5+ (the notification tests use built-in SQLite):
 
 ```sh
