@@ -151,6 +151,28 @@ h2 {
   color: var(--muted);
 }
 
+.project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.foot > .project-footer { margin-top: 16px; }
+.project-links { display: flex; gap: 20px; }
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  color: var(--muted);
+  text-underline-offset: 4px;
+}
+.project-links a:hover { color: var(--text); }
+.project-links a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
 .nav {
   display: flex;
   gap: 24px;

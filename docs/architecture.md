@@ -95,7 +95,7 @@ Live freshness follows the measurement time: up to 30 seconds is live, up to 60 
 
 Grid power is positive for import and negative for export. Display calibration divides grid power by the saved ratio and adds the grid correction to reported home load. It does not multiply solar or all home load, and does not rewrite stored raw readings. See the [calibration guide](ct-calibration.md) for the comparison procedure.
 
-The public introduction lives in the separate `site/` directory, with overview, getting-started, comparison and project pages. Its screenshots and generated read-only demo use simulated readings; the demo reuses the production browser source and intercepts API calls locally. It does not expose the private dashboard.
+The public introduction lives in the separate `site/` directory, with overview, getting-started, comparison and project pages. All four dashboard pages link to its About section and the GitHub repository in their footer; both links open in a new tab. Its screenshots and generated read-only demo use simulated readings; the demo reuses the production browser source and intercepts API calls locally. It does not expose the private dashboard.
 
 ## Decisions
 
