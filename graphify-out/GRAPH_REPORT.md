@@ -1,7 +1,7 @@
-# Graph Report - sunpower-monitor  (2026-10-11)
+# Graph Report - sunpower-monitor  (2026-10-27)
 
 ## Corpus Check
-- 92 files · ~247,443 words
+- 92 files · ~247,669 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 12 file(s) not represented in the graph (top: (none) 5, .example 4, .css 2)
 
@@ -399,11 +399,11 @@ Nodes (5): Env, FakeIngest, Records every upload and can be told to fail like a 
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ADR-0001: Evaluate PyPVS for the collector` connect `SDKChecks` to `PVSError`, `docs/README.md`?**
-  _High betweenness centrality (0.280) - this node is a cross-community bridge._
+  _High betweenness centrality (0.279) - this node is a cross-community bridge._
 - **Why does `ok()` connect `notifications.ts` to `PVS Compatibility Implementation Plan`, `SDKChecks`, `PVS compatibility and read-only checks`, `Optional iPhone notifications with Bark`?**
-  _High betweenness centrality (0.220) - this node is a cross-community bridge._
+  _High betweenness centrality (0.218) - this node is a cross-community bridge._
 - **Why does `Context and requirements` connect `PVSError` to `Collector`, `SDKChecks`?**
-  _High betweenness centrality (0.212) - this node is a cross-community bridge._
+  _High betweenness centrality (0.211) - this node is a cross-community bridge._
 - **Are the 7 inferred relationships involving `CollectorTestCase` (e.g. with `Collector` and `PVSError`) actually correct?**
   _`CollectorTestCase` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 8 inferred relationships involving `Collector` (e.g. with `PVSError` and `PendingQueue`) actually correct?**

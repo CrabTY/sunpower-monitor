@@ -14935,7 +14935,7 @@
       "node_kind": "heading",
       "norm_label": "main push graph updates",
       "source_file": "CONTRIBUTING.md",
-      "source_location": "L20"
+      "source_location": "L23"
     },
     {
       "id": "contributing_project_layout",
@@ -14947,7 +14947,7 @@
       "node_kind": "heading",
       "norm_label": "project layout",
       "source_file": "CONTRIBUTING.md",
-      "source_location": "L49"
+      "source_location": "L52"
     },
     {
       "id": "contributing_pull_requests",
@@ -14959,7 +14959,7 @@
       "node_kind": "heading",
       "norm_label": "pull requests",
       "source_file": "CONTRIBUTING.md",
-      "source_location": "L55"
+      "source_location": "L58"
     },
     {
       "id": "docs_plans_2026_10_09_english_documentation",
@@ -36833,17 +36833,6 @@
     },
     {
       "source": "contributing_contributing",
-      "target": "contributing_project_layout",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CONTRIBUTING.md",
-      "source_location": "L49",
-      "weight": 1.0
-    },
-    {
-      "source": "contributing_contributing",
       "target": "contributing_local_setup",
       "relation": "contains",
       "_origin": "ast",
@@ -36855,13 +36844,24 @@
     },
     {
       "source": "contributing_contributing",
+      "target": "contributing_project_layout",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CONTRIBUTING.md",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "contributing_contributing",
       "target": "contributing_pull_requests",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CONTRIBUTING.md",
-      "source_location": "L55",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -36872,7 +36872,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CONTRIBUTING.md",
-      "source_location": "L20",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -49028,7 +49028,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CONTRIBUTING.md",
-      "source_location": "L51",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -49039,7 +49039,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CONTRIBUTING.md",
-      "source_location": "L52",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -50389,7 +50389,7 @@
       "confidence_score": 0.95,
       "context": "sql",
       "source_file": "CONTRIBUTING.md",
-      "source_location": "L43",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
